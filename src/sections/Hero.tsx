@@ -5,6 +5,7 @@ import grainImage from "@/assets/images/grain.jpg";
 import StartIcon from "@/assets/icons/star.svg";
 import SparkleIcon from "@/assets/icons/sparkle.svg";
 import { HeroOrbit } from "@/components/HeroOrbit";
+import { FlipWords } from "@/components/ui/flip-words";
 export const HeroSection = () => {
   return (
     <div className="py-32 md:py-48 lg:py-60 relative z-0 overflow-x-clip">
@@ -56,9 +57,15 @@ export const HeroSection = () => {
           </div>
         </div>
         <div className="max-w-6xl mx-auto">
-          <h1 className="font-bold text-3xl md:text-5xl text-center mt-8 tracking-wide">
+          <div className="font-bold text-3xl font-satoshi md:text-5xl text-center mt-8 tracking-wide">
+            <FlipWords
+              words={["Front-End Developer", "Quality Assurance"]}
+              duration={2000}
+            />
+          </div>
+          {/* <h1 className="font-bold text-3xl font-serif md:text-5xl text-center mt-8 tracking-wide">
             Front-End Developer and Quality Assurance
-          </h1>
+          </h1> */}
           <h3 className="font-bold text-xl md:text-2xl text-center mt-4 tracking-wide text-amber-400">
             (Insya Allah Full-Stack)
           </h3>
@@ -81,6 +88,12 @@ export const HeroSection = () => {
           </button>
         </div>
       </div>
+      {/* <div className="flex justify-center">
+        <FlipWords
+          words={["test ini adalah test", "asdasda"]}
+          duration={1000}
+        />
+      </div> */}
     </div>
   );
 };
