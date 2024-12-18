@@ -6,6 +6,7 @@ import StartIcon from "@/assets/icons/star.svg";
 import SparkleIcon from "@/assets/icons/sparkle.svg";
 import { HeroOrbit } from "@/components/HeroOrbit";
 import { FlipWords } from "@/components/ui/flip-words";
+import { Spotlight } from "../components/ui/Spotlight";
 export const HeroSection = () => {
   return (
     <div className="py-32 md:py-48 lg:py-60 relative z-0 overflow-x-clip">
@@ -43,23 +44,31 @@ export const HeroSection = () => {
         </HeroOrbit> */}
       </div>
       <div className="container">
+        <Spotlight
+          className="-top-40 left-0 md:left-60 md:-top-20"
+          fill="white"
+        />
+        {/* <Spotlight
+        className="-top-40 right-0 md:right-60 md:-top-20"
+        fill="white"
+      /> */}
         <div className="flex flex-col items-center gap-1.5">
           <Image
             src={memojiImage}
-            className="size-24 md:size-32 lg:size-44 rounded-full"
+            className="size-24 md:size-32 lg:size-44 rounded-full z-20"
             alt="Picture of me"
           />
           <div className="bg-gray-900 border border-amber-400 px-4 py-1.5 inline-flex items-center gap-4 rounded-lg">
             <div className="bg-green-500 size-2.5 rounded-full"></div>
             <div className="text-sm font-medium">
-              Available for new projects
+              Available for new jobs and projects
             </div>
           </div>
         </div>
         <div className="max-w-6xl mx-auto">
           <div className="font-bold text-3xl font-satoshi md:text-5xl text-center mt-8 tracking-wide">
             <FlipWords
-              words={["Front-End Developer", "Quality Assurance"]}
+              words={["Quality Assurance", "Front-End Developer"]}
               duration={2000}
             />
           </div>
@@ -75,6 +84,7 @@ export const HeroSection = () => {
             <span className="p-1.5 text-emerald-500 font-bold">
               PT. Kalbe Farma Tbk.
             </span>
+            until February 2025
           </p>
         </div>
         <div className="flex flex-col md:flex-row justify-center items-center mt-8 gap-4">
