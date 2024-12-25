@@ -1,4 +1,5 @@
 import memojiImage from "@/assets/images/me.jpg";
+import memojiImageFormal from "@/assets/images/me-formal.jpg";
 import Image from "next/image";
 import ArrowDown from "@/assets/icons/arrow-down.svg";
 import grainImage from "@/assets/images/grain.jpg";
@@ -44,17 +45,17 @@ export const HeroSection = () => {
         </HeroOrbit> */}
       </div>
       <div className="container">
-        <Spotlight
+        {/* <Spotlight
           className="-top-40 left-0 md:left-60 md:-top-20"
           fill="white"
-        />
+        /> */}
         {/* <Spotlight
         className="-top-40 right-0 md:right-60 md:-top-20"
         fill="white"
       /> */}
         <div className="flex flex-col items-center gap-1.5">
           <Image
-            src={memojiImage}
+            src={memojiImageFormal}
             className="size-24 md:size-32 lg:size-44 rounded-full z-20"
             alt="Picture of me"
           />
@@ -82,7 +83,7 @@ export const HeroSection = () => {
             Final Year Student at Binus University and currently doing my
             internship program at
             <span className="p-1.5 text-emerald-500 font-bold">
-              PT. Kalbe Farma Tbk.
+              PT. Kalbe Farma Tbk,
             </span>
             until February 2025
           </p>
