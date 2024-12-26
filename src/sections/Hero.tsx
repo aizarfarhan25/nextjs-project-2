@@ -50,9 +50,9 @@ export const HeroSection = () => {
           fill="white"
         /> */}
         {/* <Spotlight
-        className="-top-40 right-0 md:right-60 md:-top-20"
-        fill="white"
-      /> */}
+          className="-top-40 right-0 md:right-60 md:-top-20"
+          fill="white"
+        /> */}
         <div className="flex flex-col items-center gap-1.5">
           <Image
             src={memojiImageFormal}
