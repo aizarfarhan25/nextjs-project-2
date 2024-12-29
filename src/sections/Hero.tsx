@@ -10,7 +10,10 @@ import { FlipWords } from "@/components/ui/flip-words";
 import { Spotlight } from "../components/ui/Spotlight";
 export const HeroSection = () => {
   return (
-    <div id="home" className="py-32 md:py-48 lg:py-60 relative z-0 overflow-x-clip">
+    <div
+      id="home"
+      className="py-32 md:py-48 lg:py-60 relative z-0 overflow-x-clip"
+    >
       <div className="absolute inset-0 [mask-image:linear-gradient(to_bottom,transparent,black_10%,black_70%,transparent)]">
         <div
           className="absolute inset-0 -z-30 opacity-5"
@@ -100,7 +103,7 @@ export const HeroSection = () => {
           <a href="#contact" className="z-10">
             <button className="inline-flex items-center gap-2 border border-white bg-white text-gray-900 px-6 h-12 rounded-xl">
               <span>👋🏽</span>
-              <span className="font-semibold">Let's Connect</span>
+              <span className="font-semibold">Let&apos;s Connect</span>
             </button>
           </a>
         </div>
