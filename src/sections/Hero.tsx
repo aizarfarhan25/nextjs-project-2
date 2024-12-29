@@ -66,13 +66,13 @@ export const HeroSection = () => {
             <div className="bg-green-500 size-2.5 rounded-full relative">
               <div className="bg-green-500 absolute inset-0 animate-ping-large rounded-full"></div>
             </div>
-            <div className="text-sm font-medium">
+            <div className="text-xs md:text-sm lg:text-sm font-medium">
               Available for new jobs and projects
             </div>
           </div>
         </div>
         <div className="max-w-6xl mx-auto">
-          <div className="font-bold text-3xl font-satoshi md:text-5xl text-center mt-8 tracking-wide">
+          <div className="font-bold text-2xl font-satoshi md:text-5xl text-center mt-8 tracking-wide">
             <FlipWords
               words={["Quality Assurance", "Front-End Developer"]}
               duration={2000}
@@ -81,7 +81,7 @@ export const HeroSection = () => {
           {/* <h1 className="font-bold text-3xl font-serif md:text-5xl text-center mt-8 tracking-wide">
             Front-End Developer and Quality Assurance
           </h1> */}
-          <h3 className="font-bold text-xl md:text-2xl text-center mt-4 tracking-wide text-amber-400">
+          <h3 className="font-bold text-lg md:text-2xl text-center mt-4 tracking-wide text-amber-400">
             (Insya Allah Full-Stack)
           </h3>
           <p className="mt-4 text-center text-white/60 md:text-lg">
