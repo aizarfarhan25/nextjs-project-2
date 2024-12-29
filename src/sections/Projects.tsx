@@ -18,8 +18,8 @@ const portfolioProjects = [
     year: "2024",
     title: "EasyTrip",
     results: [
-      { title: "A responsive website to showcase the beauty of Indonesia" },
-      { title: "Built using HTML and CSS" },
+      { title: "A responsive travel website" },
+      { title: "HTML and CSS" },
     ],
     link: "https://easytrip-ten.vercel.app/",
     image: easytrip,
@@ -29,11 +29,8 @@ const portfolioProjects = [
     year: "2024",
     title: "NiuHome",
     results: [
-      {
-        title:
-          "A responsive website designed to simplify your search for the perfect home or properties.",
-      },
-      { title: "Built using HTML, Tailwind CSS, and JavaScript" },
+      { title: "A responsive real-estate website" },
+      { title: "HTML, Tailwind CSS, and JavaScript" },
     ],
     link: "https://niuhome.site/",
     image: niuhome,
@@ -45,9 +42,9 @@ const portfolioProjects = [
     results: [
       {
         title:
-          "A responsive website for finding the perfect interiors for your home or properties.",
+          "A responsive design interiors website",
       },
-      { title: "Built using HTML, Tailwind CSS, and JavaScript" },
+      { title: "HTML, Tailwind CSS, and JavaScript" },
     ],
     link: "https://comfie.site/",
     image: comfie,
@@ -68,7 +65,7 @@ const portfolioProjects = [
 
 export const ProjectsSection = () => {
   return (
-    <section className="pb-16 lg:py-24">
+    <section id="project" className="pb-16 lg:py-24">
       <div className="container">
         <SectionHeader
           eyebrow="projects gallery"
@@ -77,19 +74,22 @@ export const ProjectsSection = () => {
           RevoU Fullstack Software Engineering Bootcamp."
         />
         <div className="flex flex-col mt-10 md:mt-20 gap-20">
-          {portfolioProjects.map((project) => (
+          {portfolioProjects.map((project, projectIndex) => (
             <Card
               key={project.title}
-              className="px-8 pt-8 pb-0 md:pt-12 md:px-10 lg:pt-16 lg:px-20"
+              className="px-8 pt-8 pb-0 md:pt-12 md:px-10 lg:pt-16 lg:px-20 sticky"
+              style={{
+                top: `calc(64px + ${projectIndex * 40}px)`
+              }}
             >
               <div className="lg:grid lg:grid-cols-2 lg:gap-16">
                 <div className="lg:pb-16">
-                  <div className="bg-gradient-to-r from-emerald-300 to-sky-400 inline-flex gap-2 font-bold uppercase tracking-widest text-sm text-transparent bg-clip-text">
+                  <div className="bg-gradient-to-r from-yellow-300 to-amber-400 inline-flex gap-2 font-bold uppercase tracking-widest text-sm text-transparent bg-clip-text">
                     <span>{project.company}</span>
                     <span>&bull;</span>
                     <span>{project.year}</span>
                   </div>
-                  <h3 className="font-serif text-2xl mt-2 md:mt-5 md:text-4xl">
+                  <h3 className="font-beni font-semibold text-2xl mt-2 md:mt-5 md:text-4xl">
                     {project.title}
                   </h3>
                   <hr className="border-t-2 border-white/5 mt-4 md:mt-5" />

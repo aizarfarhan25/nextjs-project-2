@@ -1,6 +1,6 @@
 import type { Metadata } from "next";
 import { Inter, Calistoga, Nunito } from "next/font/google";
-import localFonts from "next/font/local"
+import localFonts from "next/font/local";
 import "./globals.css";
 import { twMerge } from "tailwind-merge";
 
@@ -11,12 +11,23 @@ const calistoga = Calistoga({
   weight: ["400"],
 });
 
-const satoshi = localFonts ({
-  src: [{
-    path: "../../public/font/Satoshi-Regular.otf",
-    weight: "500"
-  }],
+const satoshi = localFonts({
+  src: [
+    {
+      path: "../../public/font/Satoshi-Regular.otf",
+      weight: "500",
+    },
+  ],
   variable: "--font-satoshi",
+});
+const beni = localFonts({
+  src: [
+    {
+      path: "../../public/font/BeniRegular.woff2",
+      weight: "500",
+    },
+  ],
+  variable: "--font-beni",
 });
 
 export const metadata: Metadata = {
@@ -36,7 +47,7 @@ export default function RootLayout({
           // inter.className,
           // calistoga.className,
           // satoshi.className,
-          `bg-black text-white antialiased ${inter.variable} ${calistoga.variable} ${satoshi.variable}`
+          `bg-black text-white antialiased ${inter.variable} ${calistoga.variable} ${satoshi.variable} ${beni.variable}`
         )}
       >
         {children}

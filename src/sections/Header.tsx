@@ -22,17 +22,17 @@ export const Header = () => {
         },
         {
           name: "Project",
-          link: "/project",
+          link: "#project",
           icon: <IconCode className="h-4 w-4 text-neutral-500 dark:text-white block" />,
         },
         {
           name: "About",
-          link: "/about",
+          link: "#about",
           icon: <IconUser className="h-4 w-4 text-neutral-500 dark:text-white block" />,
         },
         {
           name: "Contact",
-          link: "/contact",
+          link: "#contact",
           icon: (
             <IconMessage className="h-4 w-4 text-neutral-500 dark:text-white block" />
           ),

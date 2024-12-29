@@ -60,7 +60,9 @@ export const HeroSection = () => {
             alt="Picture of me"
           />
           <div className="bg-gray-900 border border-amber-400 px-4 py-1.5 inline-flex items-center gap-4 rounded-lg">
-            <div className="bg-green-500 size-2.5 rounded-full"></div>
+            <div className="bg-green-500 size-2.5 rounded-full relative">
+              <div className="bg-green-500 absolute inset-0 animate-ping-large rounded-full"></div>
+            </div>
             <div className="text-sm font-medium">
               Available for new jobs and projects
             </div>
@@ -89,14 +91,18 @@ export const HeroSection = () => {
           </p>
         </div>
         <div className="flex flex-col md:flex-row justify-center items-center mt-8 gap-4">
-          <button className="inline-flex items-center gap-2 border border-white/15 px-6 h-12 rounded-xl">
-            <span className="font-semibold">Explore My Work</span>
-            <ArrowDown className="size-4" />
-          </button>
-          <button className="inline-flex items-center gap-2 border border-white bg-white text-gray-900 px-6 h-12 rounded-xl">
-            <span>👋🏽</span>
-            <span className="font-semibold">Let's Connect</span>
-          </button>
+          <a href="#project" className="z-10">
+            <button className="inline-flex items-center gap-2 border border-white/15 px-6 h-12 rounded-xl">
+              <span className="font-semibold">Explore My Work</span>
+              <ArrowDown className="size-4" />
+            </button>
+          </a>
+          <a href="#contact" className="z-10">
+            <button className="inline-flex items-center gap-2 border border-white bg-white text-gray-900 px-6 h-12 rounded-xl">
+              <span>👋🏽</span>
+              <span className="font-semibold">Let's Connect</span>
+            </button>
+          </a>
         </div>
       </div>
       {/* <div className="flex justify-center">
