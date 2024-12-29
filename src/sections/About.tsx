@@ -123,7 +123,7 @@ export const AboutSection = () => {
               <CardHeader
                 title="My Toolbox"
                 description="Explore the technologies and tools I use to crate all of my
-                projects and exceptional digital exceriences."
+                projects and exceptional digital excperiences."
                 className=""
               />
               <ToolboxItems
