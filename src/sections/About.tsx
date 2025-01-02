@@ -32,7 +32,7 @@ const toolboxItems = [
     iconType: CssIcon,
   },
   {
-    title: "Tailwind",
+    title: "Tailwind CSS",
     iconType: TailwindIcon,
   },
   {
