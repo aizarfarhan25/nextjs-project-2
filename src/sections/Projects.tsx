@@ -4,6 +4,7 @@ import aiStartupLandingPage from "@/assets/images/ai-startup-landing-page.png";
 import easytrip from "@/assets/images/Easytrip-new.png";
 import niuhome from "@/assets/images/NiuHome-new.png";
 import comfie from "@/assets/images/Comfie-new.png";
+import gegeshop from "@/assets/images/Gegeshop.png";
 import { div, li } from "framer-motion/client";
 import Image from "next/image";
 import CheckCircleIcon from "@/assets/icons/check-circle.svg";
@@ -47,6 +48,19 @@ const portfolioProjects = [
     ],
     link: "https://comfie.site/",
     image: comfie,
+  },
+  {
+    company: "RevoU (Bootcamp Project)",
+    year: "2025",
+    title: "GegeShop",
+    results: [
+      {
+        title: "A responsive E-Commerce website",
+      },
+      { title: "React, Tailwind CSS, and TypeScript" },
+    ],
+    link: "https://gegeshop.netlify.app/",
+    image: gegeshop,
   },
   // {
   //   company: "Quantum Dynamics",
