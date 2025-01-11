@@ -4,7 +4,7 @@ import aiStartupLandingPage from "@/assets/images/ai-startup-landing-page.png";
 import easytrip from "@/assets/images/Easytrip-new.png";
 import niuhome from "@/assets/images/NiuHome-new.png";
 import comfie from "@/assets/images/Comfie-new.png";
-import gegeshop from "@/assets/images/Gegeshop.png";
+import gegeshop from "@/assets/images/GegeShop.png";
 import { div, li } from "framer-motion/client";
 import Image from "next/image";
 import CheckCircleIcon from "@/assets/icons/check-circle.svg";
