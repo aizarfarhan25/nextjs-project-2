@@ -81,9 +81,9 @@ export const HeroSection = () => {
           {/* <h1 className="font-bold text-3xl font-serif md:text-5xl text-center mt-8 tracking-wide">
             Front-End Developer and Quality Assurance
           </h1> */}
-          <h3 className="font-bold text-lg md:text-2xl text-center mt-4 tracking-wide text-amber-400">
+          {/* <h3 className="font-bold text-lg md:text-2xl text-center mt-4 tracking-wide text-amber-400">
             (Insya Allah Full-Stack)
-          </h3>
+          </h3> */}
           <p className="mt-4 text-center text-white/60 md:text-lg">
             Final Year Student at Binus University and currently doing my
             internship program at
@@ -104,6 +104,16 @@ export const HeroSection = () => {
             <button className="inline-flex items-center gap-2 border border-white bg-white text-gray-900 px-6 h-12 rounded-xl">
               <span>👋🏽</span>
               <span className="font-semibold">Let&apos;s Connect</span>
+            </button>
+          </a>
+          <a
+            href="/Andi Muh. Aizar Farhan - CV.pdf"
+            download="Andi Muh. Aizar Farhan - CV.pdf"
+            className="z-10"
+          >
+            <button className="inline-flex items-center gap-2 border border-white/15 bg-amber-400 text-gray-900 px-6 h-12 rounded-xl">
+              <span>📃</span>
+              <span className="font-semibold">Download My Resume</span>
             </button>
           </a>
         </div>
