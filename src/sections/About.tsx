@@ -11,6 +11,7 @@ import CssIcon from "@/assets/icons/css3-brands-solid.svg";
 import ReactIcon from "@/assets/icons/react-brands-solid.svg";
 import TailwindIcon from "@/assets/icons/tailwind-brand-solid.svg";
 import PlaywrightIcon from "@/assets/icons/playwright.svg";
+import KatalonIcon from "@/assets/icons/katalon.svg";
 // import SeleniumIcon from "@/assets/icons/selenium.svg";
 import FigmaIcon from "@/assets/icons/figma.svg";
 import PostmanIcon from "@/assets/icons/postman.svg";
@@ -47,10 +48,10 @@ const toolboxItems = [
     title: "Github",
     iconType: GithubIcon,
   },
-  // {
-  //   title: "Katalon",
-  //   iconType: KatalonIcon,
-  // },
+  {
+    title: "Katalon",
+    iconType: KatalonIcon,
+  },
   {
     title: "Playwright",
     iconType: PlaywrightIcon,
