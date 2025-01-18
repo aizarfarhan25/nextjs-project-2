@@ -10,6 +10,11 @@ import HTMLIcon from "@/assets/icons/html5-brands-solid.svg";
 import CssIcon from "@/assets/icons/css3-brands-solid.svg";
 import ReactIcon from "@/assets/icons/react-brands-solid.svg";
 import TailwindIcon from "@/assets/icons/tailwind-brand-solid.svg";
+import KatalonIcon from "@/assets/icons/katalon.svg";
+import PlaywrightIcon from "@/assets/icons/playwright.svg";
+// import SeleniumIcon from "@/assets/icons/selenium.svg";
+import FigmaIcon from "@/assets/icons/figma.svg";
+import PostmanIcon from "@/assets/icons/postman.svg";
 import GithubIcon from "@/assets/icons/github-brands-solid.svg";
 import mapImage from "@/assets/images/my-map.png";
 import smileMemoji from "@/assets/images/memoji-smile.png";
@@ -42,6 +47,26 @@ const toolboxItems = [
   {
     title: "Github",
     iconType: GithubIcon,
+  },
+  {
+    title: "Katalon",
+    iconType: KatalonIcon,
+  },
+  {
+    title: "Playwright",
+    iconType: PlaywrightIcon,
+  },
+  // {
+  //   title: "Selenium",
+  //   iconType: SeleniumIcon,
+  // },
+  {
+    title: "Postman",
+    iconType: PostmanIcon,
+  },
+  {
+    title: "Figma",
+    iconType: FigmaIcon,
   },
 ];
 
