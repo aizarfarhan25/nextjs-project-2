@@ -74,8 +74,9 @@ export const HeroSection = () => {
         <div className="max-w-6xl mx-auto">
           <div className="font-bold text-2xl font-beni md:text-5xl text-center mt-8 tracking-wide">
             <FlipWords
-              words={["Quality Assurance", "IT Auditor","Front-End Developer"]}
+              words={["Quality Assurance", "IS/IT Auditor","Front-End Developer"]}
               duration={2000}
+              className="text-white"
             />
           </div>
           {/* <h1 className="font-bold text-3xl font-serif md:text-5xl text-center mt-8 tracking-wide">
