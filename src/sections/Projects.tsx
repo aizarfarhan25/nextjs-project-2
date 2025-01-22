@@ -57,9 +57,9 @@ const portfolioProjects = [
       {
         title: "A responsive E-Commerce website",
       },
-      { title: "React, Tailwind CSS, and TypeScript" },
+      { title: "Next.js, Tailwind CSS, and TypeScript" },
     ],
-    link: "https://gegeshop.netlify.app/",
+    link: "https://gegeshop.vercel.app/",
     image: gegeshop,
   },
   // {
