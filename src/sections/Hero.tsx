@@ -108,8 +108,8 @@ export const HeroSection = () => {
             </button>
           </a>
           <a
-            href="/Andi Muh. Aizar Farhan - CV.pdf"
-            download="Andi Muh. Aizar Farhan - CV.pdf"
+            href="/CV - Andi Muh. Aizar Farhan.pdf"
+            download="CV - Andi Muh. Aizar Farhan.pdf"
             className="z-10"
           >
             <button className="inline-flex items-center gap-2 border border-white/15 bg-amber-400 text-gray-900 px-6 h-12 rounded-xl">
