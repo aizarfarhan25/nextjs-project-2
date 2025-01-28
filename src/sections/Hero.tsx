@@ -91,7 +91,7 @@ export const HeroSection = () => {
             <span className="p-1.5 text-emerald-500 font-bold">
               PT. Kalbe Farma Tbk,
             </span>
-            until February 2025
+            until 11 February 2025
           </p>
         </div>
         <div className="flex flex-col md:flex-row justify-center items-center mt-8 gap-4">
