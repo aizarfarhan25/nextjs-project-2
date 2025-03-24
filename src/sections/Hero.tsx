@@ -74,7 +74,7 @@ export const HeroSection = () => {
         <div className="max-w-6xl mx-auto">
           <div className="font-bold text-2xl font-beni md:text-5xl text-center mt-8 tracking-wide">
             <FlipWords
-              words={["Quality Assurance", "IS/IT Auditor","Front-End Developer"]}
+              words={["Quality Assurance Engineer", "IS/IT Auditor","Front-End Developer"]}
               duration={2000}
               className="text-white"
             />
@@ -88,10 +88,10 @@ export const HeroSection = () => {
           <p className="mt-4 text-center text-white/60 md:text-lg">
             Final Year Student at Binus University and currently doing my
             internship program at
-            <span className="p-1.5 text-emerald-500 font-bold">
-              PT. Kalbe Farma Tbk,
+            <span className="p-1.5 text-sky-400 font-bold">
+              Synapsis.id,
             </span>
-            until 11 February 2025
+            until June 2025
           </p>
         </div>
         <div className="flex flex-col md:flex-row justify-center items-center mt-8 gap-4">
