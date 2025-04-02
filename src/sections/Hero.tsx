@@ -62,7 +62,7 @@ export const HeroSection = () => {
             className="size-24 md:size-32 lg:size-44 rounded-full z-20"
             alt="Picture of me"
           />
-          <div className="bg-gray-900 border border-amber-400 px-4 py-1.5 inline-flex items-center gap-4 rounded-lg">
+          <div className="bg-gray-900 border border-green-500 px-4 py-1.5 inline-flex items-center gap-4 rounded-lg">
             <div className="bg-green-500 size-2.5 rounded-full relative">
               <div className="bg-green-500 absolute inset-0 animate-ping-large rounded-full"></div>
             </div>
