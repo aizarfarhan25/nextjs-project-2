@@ -8,6 +8,7 @@ import SparkleIcon from "@/assets/icons/sparkle.svg";
 import { HeroOrbit } from "@/components/HeroOrbit";
 import { FlipWords } from "@/components/ui/flip-words";
 import { Spotlight } from "../components/ui/Spotlight";
+import download from "@/assets/images/downloads.png";
 export const HeroSection = () => {
   return (
     <div
@@ -103,8 +104,8 @@ export const HeroSection = () => {
           </a>
           <a href="#contact" className="z-10">
             <button className="inline-flex items-center gap-2 border border-white bg-white text-gray-900 px-6 h-12 rounded-xl">
-              <span>👋🏽</span>
               <span className="font-semibold">Let&apos;s Connect</span>
+              <span>👋🏽</span>
             </button>
           </a>
           <a
@@ -113,8 +114,14 @@ export const HeroSection = () => {
             className="z-10"
           >
             <button className="inline-flex items-center gap-2 border border-white/15 bg-amber-400 text-gray-900 px-6 h-12 rounded-xl">
-              <span>📃</span>
-              <span className="font-semibold">Download My CV</span>
+              <span className="font-semibold">My Resume</span>
+              <Image
+                src={download}
+                alt="Download"
+                className="size-4"
+                width={16}
+                height={16}
+              />
             </button>
           </a>
         </div>
