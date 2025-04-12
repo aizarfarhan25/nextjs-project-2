@@ -8,6 +8,7 @@ import SparkleIcon from "@/assets/icons/sparkle.svg";
 import { HeroOrbit } from "@/components/HeroOrbit";
 import { FlipWords } from "@/components/ui/flip-words";
 import { Spotlight } from "../components/ui/Spotlight";
+import download from "@/assets/images/downloads.png";
 export const HeroSection = () => {
   return (
     <div
@@ -62,7 +63,7 @@ export const HeroSection = () => {
             className="size-24 md:size-32 lg:size-44 rounded-full z-20"
             alt="Picture of me"
           />
-          <div className="bg-gray-900 border border-amber-400 px-4 py-1.5 inline-flex items-center gap-4 rounded-lg">
+          <div className="bg-gray-900 border border-green-500 px-4 py-1.5 inline-flex items-center gap-4 rounded-lg">
             <div className="bg-green-500 size-2.5 rounded-full relative">
               <div className="bg-green-500 absolute inset-0 animate-ping-large rounded-full"></div>
             </div>
@@ -72,9 +73,9 @@ export const HeroSection = () => {
           </div>
         </div>
         <div className="max-w-6xl mx-auto">
-          <div className="font-bold text-2xl font-beni md:text-5xl text-center mt-8 tracking-wide">
+          <div className="font-bold text-2xl font-beni md:text-5xl text-wrap text-center mt-8 tracking-wide h-[80px] md:h-[120px] flex items-center justify-center">
             <FlipWords
-              words={["Quality Assurance Engineer", "IS/IT Auditor","Front-End Developer"]}
+              words={["Quality Assurance Engineer","Front-End Developer"]}
               duration={2000}
               className="text-white"
             />
@@ -103,8 +104,8 @@ export const HeroSection = () => {
           </a>
           <a href="#contact" className="z-10">
             <button className="inline-flex items-center gap-2 border border-white bg-white text-gray-900 px-6 h-12 rounded-xl">
-              <span>👋🏽</span>
               <span className="font-semibold">Let&apos;s Connect</span>
+              <span>👋🏽</span>
             </button>
           </a>
           <a
@@ -113,8 +114,14 @@ export const HeroSection = () => {
             className="z-10"
           >
             <button className="inline-flex items-center gap-2 border border-white/15 bg-amber-400 text-gray-900 px-6 h-12 rounded-xl">
-              <span>📃</span>
-              <span className="font-semibold">Download My CV</span>
+              <span className="font-semibold">My Resume</span>
+              <Image
+                src={download}
+                alt="Download"
+                className="size-4"
+                width={16}
+                height={16}
+              />
             </button>
           </a>
         </div>

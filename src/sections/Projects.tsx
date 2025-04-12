@@ -5,6 +5,7 @@ import easytrip from "@/assets/images/Easytrip-new.png";
 import niuhome from "@/assets/images/NiuHome-new.png";
 import comfie from "@/assets/images/Comfie-new.png";
 import gegeshop from "@/assets/images/GegeShop.png";
+import revoubank from "@/assets/images/RevoU_Bank.png";
 import { div, li } from "framer-motion/client";
 import Image from "next/image";
 import CheckCircleIcon from "@/assets/icons/check-circle.svg";
@@ -20,6 +21,7 @@ const portfolioProjects = [
     title: "EasyTrip",
     results: [
       { title: "A responsive travel website" },
+      { title: "Frontend" },
       { title: "HTML and CSS" },
     ],
     link: "https://easytrip-ten.vercel.app/",
@@ -31,6 +33,7 @@ const portfolioProjects = [
     title: "NiuHome",
     results: [
       { title: "A responsive real-estate website" },
+      { title: "Frontend" },
       { title: "HTML, Tailwind CSS, and JavaScript" },
     ],
     link: "https://niuhome.site/",
@@ -41,9 +44,8 @@ const portfolioProjects = [
     year: "2024",
     title: "Comfie",
     results: [
-      {
-        title: "A responsive design interiors website",
-      },
+      {title: "A responsive design interiors website"},
+      { title: "Frontend" },
       { title: "HTML, Tailwind CSS, and JavaScript" },
     ],
     link: "https://comfie.site/",
@@ -54,13 +56,24 @@ const portfolioProjects = [
     year: "2025",
     title: "GegeShop",
     results: [
-      {
-        title: "A responsive E-Commerce website",
-      },
+      {title: "A responsive E-Commerce website"},
+      { title: "Frontend" },
       { title: "Next.js, Tailwind CSS, and TypeScript" },
     ],
     link: "https://gegeshop.vercel.app/",
     image: gegeshop,
+  },
+  {
+    company: "RevoU (Bootcamp Project)",
+    year: "2025",
+    title: "RevoU Bank",
+    results: [
+      {title: "Restful API for banking application"},
+      { title: "Backend" },
+      { title: "Python, Flask, PostgreSQL, and Postman" },
+    ],
+    link: "https://github.com/revou-fsse-oct24/milestone-3-aizarfarhan25.git",
+    image: revoubank,
   },
   // {
   //   company: "Quantum Dynamics",

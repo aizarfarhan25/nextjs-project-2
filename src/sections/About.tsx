@@ -18,6 +18,9 @@ import PostmanIcon from "@/assets/icons/postman.svg";
 import GithubIcon from "@/assets/icons/github-brands-solid.svg";
 import mapImage from "@/assets/images/my-map.png";
 import smileMemoji from "@/assets/images/memoji-smile.png";
+import PythonIcon from "@/assets/icons/python.svg";
+import PostgreSQL from "@/assets/icons/postgresql.svg";
+import MySQL from "@/assets/icons/mysql.svg";
 import { CardHeader } from "@/components/CardHeader";
 import { ToolboxItems } from "@/components/ToolboxItems";
 import { motion } from "framer-motion";
@@ -67,6 +70,18 @@ const toolboxItems = [
   {
     title: "Figma",
     iconType: FigmaIcon,
+  },
+  {
+    title: "Python",
+    iconType: PythonIcon,
+  },
+  {
+    title: "PostgreSQL",
+    iconType: PostgreSQL,
+  },
+  {
+    title: "MySQL",
+    iconType: MySQL,
   },
 ];
 
