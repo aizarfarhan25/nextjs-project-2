@@ -87,12 +87,11 @@ export const HeroSection = () => {
             (Insya Allah Full-Stack)
           </h3> */}
           <p className="mt-4 text-center text-white/60 md:text-lg">
-            Final Year Student at Binus University and currently doing my
-            internship program at
+            Fresh Graduate Student from Binus University, passionate about web development. Currently serving as a
             <span className="p-1.5 text-sky-400 font-bold">
-              Synapsis.id,
+            QA Engineer at Synapsis.id
             </span>
-            until June 2025
+            through June 2025
           </p>
         </div>
         <div className="flex flex-col md:flex-row justify-center items-center mt-8 gap-4">

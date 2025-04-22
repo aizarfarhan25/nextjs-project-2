@@ -148,7 +148,7 @@ export const AboutSection = () => {
                 description="My full name is Andi Muh. Aizar Farhan, but you can call me
                 Aizar. I am a Fresh Graduate with a Bachelor's Degree in
                 Information Systems Accounting & Auditing from Bina Nusantara
-                University with a GPA of 3.57. And I am currently participate in the Full Stack - Software Engineering boot camp at RevoU."
+                University with a GPA of 3.64. And I am currently participate in the Full Stack - Software Engineering boot camp at RevoU."
               />
               <div className="flex gap-4 px-10 md:px-3 lg:px-4">
                 <div className="w-40 mx-auto mt-2 md:mt-0">
