@@ -75,7 +75,7 @@ export const HeroSection = () => {
         <div className="max-w-6xl mx-auto">
           <div className="font-bold text-2xl font-beni md:text-5xl text-wrap text-center mt-8 tracking-wide h-[80px] md:h-[120px] flex items-center justify-center">
             <FlipWords
-              words={["Quality Assurance Engineer","Front-End Developer"]}
+              words={["Quality Assurance Engineer", "Front-End Developer"]}
               duration={2000}
               className="text-white"
             />
@@ -87,9 +87,10 @@ export const HeroSection = () => {
             (Insya Allah Full-Stack)
           </h3> */}
           <p className="mt-4 text-center text-white/60 md:text-lg">
-            Fresh Graduate Student from Binus University, passionate about web development. Currently serving as a
+            Motivated QA engineer with experience designing and executing tests
+            to help improve software quality. Currently serving as a
             <span className="p-1.5 text-sky-400 font-bold">
-            QA Engineer at Synapsis.id
+              QA Engineer at Synapsis.id
             </span>
             through June 2025
           </p>
