@@ -5,6 +5,7 @@ import easytrip from "@/assets/images/Easytrip-new.png";
 import niuhome from "@/assets/images/NiuHome-new.png";
 import comfie from "@/assets/images/Comfie-new.png";
 import gegeshop from "@/assets/images/GegeShop.png";
+import klikmart from "@/assets/images/KlikMart.png";
 import revoubank from "@/assets/images/RevoU_Bank.png";
 import { div, li } from "framer-motion/client";
 import Image from "next/image";
@@ -51,17 +52,29 @@ const portfolioProjects = [
     link: "https://comfie.site/",
     image: comfie,
   },
+  // {
+  //   company: "RevoU (Bootcamp Project)",
+  //   year: "2025",
+  //   title: "GegeShop",
+  //   results: [
+  //     {title: "A responsive E-Commerce website"},
+  //     { title: "Frontend" },
+  //     { title: "Next.js, Tailwind CSS, and TypeScript" },
+  //   ],
+  //   link: "https://gegeshop.vercel.app/",
+  //   image: gegeshop,
+  // },
   {
     company: "RevoU (Bootcamp Project)",
     year: "2025",
-    title: "GegeShop",
+    title: "KlikMart",
     results: [
       {title: "A responsive E-Commerce website"},
       { title: "Frontend" },
       { title: "Next.js, Tailwind CSS, and TypeScript" },
     ],
-    link: "https://gegeshop.vercel.app/",
-    image: gegeshop,
+    link: "https://group-project-dlhpe1m6f-rafli-triatmas-projects.vercel.app/",
+    image: klikmart,
   },
   {
     company: "RevoU (Bootcamp Project)",
