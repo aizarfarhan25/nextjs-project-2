@@ -86,13 +86,20 @@ export const HeroSection = () => {
           {/* <h3 className="font-bold text-lg md:text-2xl text-center mt-4 tracking-wide text-amber-400">
             (Insya Allah Full-Stack)
           </h3> */}
-          <p className="mt-4 text-center text-white/60 md:text-lg">
+          {/* <p className="mt-4 text-center text-white/60 md:text-lg">
             Motivated QA engineer with experience designing and executing tests
             to help improve software quality. Currently serving as a
             <span className="p-1.5 text-sky-400 font-bold">
               QA Engineer at Synapsis.id
             </span>
             through June 2025
+          </p> */}
+          <p className="mt-4 text-center text-white/60 md:text-lg">
+            Motivated QA engineer with experience designing and executing tests
+            to help improve software quality. Currently serving as a
+            <span className="p-1.5 text-sky-400 font-bold">
+              Software Quality Assurance Engineer at Synapsis.id
+            </span>
           </p>
         </div>
         <div className="flex flex-col md:flex-row justify-center items-center mt-8 gap-4">
