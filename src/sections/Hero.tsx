@@ -101,7 +101,7 @@ export const HeroSection = () => {
           </div>
         </div>
         <div className="max-w-6xl mx-auto">
-          <div className="relative mt-8">
+          <div className="relative mt-2">
             <span className="absolute inset-0 bg-black/70 rounded-lg md:hidden"></span>
             <div className="font-bold text-2xl font-beni md:text-5xl text-wrap text-center tracking-wide h-[80px] md:h-[120px] flex items-center justify-center relative">
               <FlipWords
