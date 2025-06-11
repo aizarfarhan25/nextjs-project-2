@@ -13,6 +13,7 @@ import download from "@/assets/images/downloads.png";
 import { GridBackground } from "@/components/ui/background-boxes";
 import { SpotlightNew } from "@/components/ui/spotlight-new";
 import { useEffect, useState } from "react";
+import { HoverBorderGradient } from "@/components/ui/hover-border-gradient";
 
 export const HeroSection = () => {
   const [isMobile, setIsMobile] = useState(false);
@@ -132,14 +133,18 @@ export const HeroSection = () => {
           </div>
         </div>
         <div className="flex flex-col md:flex-row justify-center items-center mt-8 gap-4">
-          <a href="#project" className="z-10">
-            <button className="inline-flex items-center gap-2 border border-white/15 px-6 h-12 rounded-xl">
-              <span className="font-semibold">Explore My Work</span>
+          <div className="flex justify-center text-center">
+            <HoverBorderGradient
+              containerClassName="rounded-xl transition-transform duration-200 hover:scale-105"
+              as="button"
+              className="dark:bg-black bg-white text-black dark:text-white flex items-center space-x-2"
+            >
+              <span>Explore My Work</span>
               <ArrowDown className="size-4" />
-            </button>
-          </a>
+            </HoverBorderGradient>
+          </div>
           <a href="#contact" className="z-10">
-            <button className="inline-flex items-center gap-2 border border-white bg-white text-gray-900 px-6 h-12 rounded-xl">
+            <button className="inline-flex items-center gap-2 border border-white bg-white text-gray-900 px-6 h-12 rounded-xl transition-transform duration-200 hover:scale-105 hover:shadow-lg">
               <span className="font-semibold">Let&apos;s Connect</span>
               <span>👋🏽</span>
             </button>
@@ -149,7 +154,7 @@ export const HeroSection = () => {
             download="CV - Andi Muh. Aizar Farhan.pdf"
             className="z-10"
           >
-            <button className="inline-flex items-center gap-2 border border-white/15 bg-amber-400 text-gray-900 px-6 h-12 rounded-xl">
+            <button className="inline-flex items-center gap-2 border border-white/15 bg-amber-400 text-gray-900 px-6 h-12 rounded-xl transition-transform duration-200 hover:scale-105 hover:shadow-lg">
               <span className="font-semibold">My Resume</span>
               <Image
                 src={download}
