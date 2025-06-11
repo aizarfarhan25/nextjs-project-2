@@ -1,3 +1,4 @@
+"use client";
 import memojiImage from "@/assets/images/me.jpg";
 import memojiImageFormal from "@/assets/images/me-formal.jpg";
 import Image from "next/image";
@@ -9,13 +10,34 @@ import { HeroOrbit } from "@/components/HeroOrbit";
 import { FlipWords } from "@/components/ui/flip-words";
 import { Spotlight } from "../components/ui/Spotlight";
 import download from "@/assets/images/downloads.png";
+import { GridBackground } from "@/components/ui/background-boxes";
+import { SpotlightNew } from "@/components/ui/spotlight-new";
+import { useEffect, useState } from "react";
+
 export const HeroSection = () => {
+  const [isMobile, setIsMobile] = useState(false);
+  useEffect(() => {
+    const handleResize = () => {
+      setIsMobile(window.innerWidth < 640);
+    };
+    handleResize();
+    window.addEventListener("resize", handleResize);
+    return () => window.removeEventListener("resize", handleResize);
+  }, []);
+
   return (
     <div
       id="home"
-      className="py-32 md:py-48 lg:py-60 relative z-0 overflow-x-clip"
+      className="relative z-10 py-32 md:py-48 lg:py-60 overflow-x-clip"
     >
-      <div className="absolute inset-0 [mask-image:linear-gradient(to_bottom,transparent,black_10%,black_70%,transparent)]">
+      <GridBackground className="bg-black" />
+      <SpotlightNew
+        width={isMobile ? 200 : 560}
+        height={isMobile ? 400 : 1380}
+        smallWidth={isMobile ? 80 : 240}
+        translateY={isMobile ? -80 : -350}
+      />
+      {/* <div className="absolute inset-0 [mask-image:linear-gradient(to_bottom,transparent,black_10%,black_70%,transparent)]"></div>
         <div
           className="absolute inset-0 -z-30 opacity-5"
           style={{
@@ -25,8 +47,8 @@ export const HeroSection = () => {
         <div className="size-[620px] hero-ring"></div>
         <div className="size-[820px] hero-ring"></div>
         <div className="size-[1020px] hero-ring"></div>
-        <div className="size-[1220px] hero-ring"></div>
-        {/* <HeroOrbit size={800} rotation={-72}>
+        <div className="size-[1220px] hero-ring"></div> */}
+      {/* <HeroOrbit size={800} rotation={-72}>
         <StartIcon className="size-28 text-amber-300" />
         </HeroOrbit>
         <HeroOrbit size={550} rotation={20}>
@@ -47,7 +69,7 @@ export const HeroSection = () => {
         <HeroOrbit size={710} rotation={144}>
           <SparkleIcon className="size-14 text-amber-300/20" />
         </HeroOrbit> */}
-      </div>
+      {/* </div> */}
       <div className="container">
         {/* <Spotlight
           className="-top-40 left-0 md:left-60 md:-top-20"
@@ -66,7 +88,7 @@ export const HeroSection = () => {
           <h1 className="font-beni text-white/90 bg-clip-text text-center text-2xl md:text-5xl font-bold drop-shadow-lg flex items-center gap-2 pt-4 pb-4">
             Andi Muh. Aizar Farhan
           </h1>
-          <div className="bg-gray-900 border border-green-500 px-4 py-1.5 inline-flex items-center gap-4 rounded-lg">
+          <div className="bg-gray-900 border border-green-500 px-4 py-1.5 inline-flex items-center gap-4 rounded-lg z-10">
             <div className="bg-green-500 size-2.5 rounded-full relative">
               <div className="bg-green-500 absolute inset-0 animate-ping-large rounded-full"></div>
             </div>
@@ -143,6 +165,7 @@ export const HeroSection = () => {
           duration={1000}
         />
       </div> */}
+      {/* </BoxesCore> */}
     </div>
   );
 };
