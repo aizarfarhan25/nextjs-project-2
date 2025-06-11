@@ -25,6 +25,7 @@ import { CardHeader } from "@/components/CardHeader";
 import { ToolboxItems } from "@/components/ToolboxItems";
 import { motion } from "framer-motion";
 import { useRef } from "react";
+import memojiImageFormal from "@/assets/images/me-formal.jpg";
 
 const toolboxItems = [
   {
@@ -142,16 +143,16 @@ export const AboutSection = () => {
         />
         <div className="mt-20 flex flex-col gap-8">
           <div className="grid grid-cols-1 gap-8 md:grid-cols-5 lg:grid-cols-3">
-            <Card className="h-[395px] md:h-[475px] lg:h-[550px] md:col-span-2 lg:col-span-1">
+            <Card className="md:min-h-[475px] lg:min-h-[550px] md:col-span-2 lg:col-span-1 flex flex-col">
               <CardHeader
                 title="Who I Am"
                 description="My name is Andi Muh. Aizar Farhan, but you can call me Aizar. I have hands-on experience as a QA engineer, where I contributed to designing and executing tests to improve software quality. Currently, I am expanding my skills in full stack software engineering at RevoU, with a keen interest in software development, design, and testing."
               />
-              <div className="flex gap-4 px-10 md:px-3 lg:px-4">
-                <div className="w-36 mx-auto mt-2 md:mt-0">
+              <div className="flex gap-4 px-10 md:px-3 lg:px-4 mt-6 justify-center mb-6">
+                <div className="w-36">
                   <Image src={binusImage} alt="Binus Logo" />
                 </div>
-                <div className="w-24 mx-auto mt-2 md:mt-0">
+                <div className="w-24">
                   <Image src={revouImage} alt="RevoU Logo" />
                 </div>
               </div>
@@ -203,16 +204,26 @@ export const AboutSection = () => {
               </div>
             </Card>
             <Card className="h-[320px] p-0 relative md:col-span-2 lg:col-span-1">
-              <Image
-                src={mapImage}
-                alt="map"
-                className="rounded-xl h-full w-full object-cover object-left-top"
-              />
-              <div className="absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 size-20 rounded-full  after:content-[''] after:absolute after:inset-0 after:outline after:outline-2 after:-outline-offset-2 after:rounded-full after:outline-gray-950/30">
-                <div className="absolute inset-0 rounded-full bg-gradient-to-r from-yellow-300 to-amber-400 -z-20 animate-ping [animation-duration:2s]"></div>
-                <div className="absolute inset-0 rounded-full bg-gradient-to-r from-yellow-300 to-amber-400 -z-10"></div>
-                <Image src={smileMemoji} alt="emoji" className="size-20" />
-              </div>
+              <a
+                href="https://maps.app.goo.gl/L5setnKDWxLaNCAM6"
+                target="_blank"
+                rel="noopener noreferrer"
+              >
+                <Image
+                  src={mapImage}
+                  alt="map"
+                  className="rounded-xl h-full w-full object-cover object-left-top"
+                />
+                <div className="absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 size-24 rounded-full after:content-[''] after:absolute after:inset-0 after:outline after:outline-2 after:-outline-offset-2 after:rounded-full after:outline-gray-950/30">
+                  <div className="absolute inset-0 rounded-full bg-gradient-to-r from-yellow-300 to-amber-400 -z-20 animate-ping [animation-duration:2s]"></div>
+                  <div className="absolute inset-0 rounded-full bg-gradient-to-r from-yellow-300 to-amber-400 -z-10"></div>
+                  <Image
+                    src={memojiImageFormal}
+                    alt="My Photo"
+                    className="size-24 rounded-full object-cover"
+                  />
+                </div>
+              </a>
             </Card>
           </div>
         </div>

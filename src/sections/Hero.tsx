@@ -63,6 +63,9 @@ export const HeroSection = () => {
             className="size-24 md:size-32 lg:size-44 rounded-full z-20"
             alt="Picture of me"
           />
+          <h1 className="font-beni text-white/90 bg-clip-text text-center text-2xl md:text-5xl font-bold drop-shadow-lg flex items-center gap-2 pt-4 pb-4">
+            Andi Muh. Aizar Farhan
+          </h1>
           <div className="bg-gray-900 border border-green-500 px-4 py-1.5 inline-flex items-center gap-4 rounded-lg">
             <div className="bg-green-500 size-2.5 rounded-full relative">
               <div className="bg-green-500 absolute inset-0 animate-ping-large rounded-full"></div>
@@ -95,11 +98,12 @@ export const HeroSection = () => {
             through June 2025
           </p> */}
           <p className="mt-4 text-center text-white/60 md:text-lg">
-            Motivated QA engineer with experience designing and executing tests
-            to help improve software quality. Currently serving as a
+            Motivated Quality Assurance Engineer with experience designing and
+            executing tests to help improve software quality.
+            {/* Currently serving as a
             <span className="p-1.5 text-sky-400 font-bold">
               Software Quality Assurance Engineer at Synapsis.id
-            </span>
+            </span> */}
           </p>
         </div>
         <div className="flex flex-col md:flex-row justify-center items-center mt-8 gap-4">

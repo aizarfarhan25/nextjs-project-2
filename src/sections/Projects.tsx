@@ -45,7 +45,7 @@ const portfolioProjects = [
     year: "2024",
     title: "Comfie",
     results: [
-      {title: "A responsive design interiors website"},
+      { title: "A responsive design interiors website" },
       { title: "Frontend" },
       { title: "HTML, Tailwind CSS, and JavaScript" },
     ],
@@ -69,7 +69,7 @@ const portfolioProjects = [
     year: "2025",
     title: "KlikMart",
     results: [
-      {title: "A responsive E-Commerce website"},
+      { title: "A responsive E-Commerce website" },
       { title: "Frontend" },
       { title: "Next.js, Tailwind CSS, and TypeScript" },
     ],
@@ -81,7 +81,7 @@ const portfolioProjects = [
     year: "2025",
     title: "RevoU Bank",
     results: [
-      {title: "Restful API for banking application"},
+      { title: "Restful API for banking application" },
       { title: "Backend" },
       { title: "Python, Flask, PostgreSQL, and Postman" },
     ],
@@ -136,9 +136,9 @@ export const ProjectsSection = () => {
                     {project.results.map((result, index) => (
                       <li
                         key={index}
-                        className="flex gap-2 text-sm md:text-base text-white/50 "
+                        className="flex items-center gap-2 text-sm md:text-base text-white/50"
                       >
-                        <CheckCircleIcon className="size-5 md:size-6" />
+                        <CheckCircleIcon className="w-6 h-6 flex-shrink-0" />
                         <span>{result.title}</span>
                       </li>
                     ))}
