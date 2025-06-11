@@ -134,14 +134,16 @@ export const HeroSection = () => {
         </div>
         <div className="flex flex-col md:flex-row justify-center items-center mt-8 gap-4">
           <div className="flex justify-center text-center">
-            <HoverBorderGradient
-              containerClassName="rounded-xl transition-transform duration-200 hover:scale-105"
-              as="button"
-              className="dark:bg-black bg-white text-black dark:text-white flex items-center space-x-2"
-            >
-              <span>Explore My Work</span>
-              <ArrowDown className="size-4" />
-            </HoverBorderGradient>
+            <a href="#project" className="z-10">
+              <HoverBorderGradient
+                containerClassName="rounded-xl transition-transform duration-200 hover:scale-105"
+                as="button"
+                className="dark:bg-black bg-white text-black dark:text-white flex items-center space-x-2"
+              >
+                <span>Explore My Work</span>
+                <ArrowDown className="size-4" />
+              </HoverBorderGradient>
+            </a>
           </div>
           <a href="#contact" className="z-10">
             <button className="inline-flex items-center gap-2 border border-white bg-white text-gray-900 px-6 h-12 rounded-xl transition-transform duration-200 hover:scale-105 hover:shadow-lg">

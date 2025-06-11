@@ -7,7 +7,7 @@ import ArrowUpRight from "@/assets/icons/arrow-up-right.svg";
 import { SectionHeader } from "@/components/SectionHeader";
 import { Card } from "@/components/Card";
 
-const organizationsProjects = [
+export const organizationsProjects = [
   {
     company: "TFI (BINUS University)",
     year: "2022",

@@ -7,7 +7,6 @@ import comfie from "@/assets/images/Comfie-new.png";
 import gegeshop from "@/assets/images/GegeShop.png";
 import klikmart from "@/assets/images/KlikMart.png";
 import revoubank from "@/assets/images/RevoU_Bank.png";
-import { div, li } from "framer-motion/client";
 import Image from "next/image";
 import CheckCircleIcon from "@/assets/icons/check-circle.svg";
 import ArrowUpRight from "@/assets/icons/arrow-up-right.svg";
@@ -15,7 +14,7 @@ import grainImage from "@/assets/images/grain.jpg";
 import { SectionHeader } from "@/components/SectionHeader";
 import { Card } from "@/components/Card";
 
-const portfolioProjects = [
+export const portfolioProjects = [
   {
     company: "RevoU (Bootcamp Project)",
     year: "2024",

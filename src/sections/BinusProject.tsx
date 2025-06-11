@@ -8,15 +8,12 @@ import ArrowUpRight from "@/assets/icons/arrow-up-right.svg";
 import { SectionHeader } from "@/components/SectionHeader";
 import { Card } from "@/components/Card";
 
-const binusProjects = [
+export const binusProjects = [
   {
     company: "BINUS University",
     year: "2022",
     title: "Dietio",
-    results: [
-      { title: "UI/UX Design" },
-      { title: "Mobile App Design" },
-    ],
+    results: [{ title: "UI/UX Design" }, { title: "Mobile App Design" }],
     link: "https://www.figma.com/design/HwF2bGhMLWMI7WCcgfDwAF/UAP-UI_EX?node-id=0-1&t=PXx7HNy8IFzPMPW3-1",
     image: dietio,
   },
@@ -24,10 +21,7 @@ const binusProjects = [
     company: "BINUS University",
     year: "2022",
     title: "PlantPedia",
-    results: [
-      { title: "UI/UX Design" },
-      { title: "Mobile App Design" },
-    ],
+    results: [{ title: "UI/UX Design" }, { title: "Mobile App Design" }],
     link: "https://www.figma.com/design/fOSHgoEUwROZaGEnskjW4r/Final-Project-UI-UX?node-id=0-1&t=7Gx9WZc8R15JkE3v-1",
     image: plantpedia,
   },
@@ -35,10 +29,7 @@ const binusProjects = [
     company: "BINUS University",
     year: "2023",
     title: "Watches Dealer",
-    results: [
-      { title: "Java Application" },
-      { title: "Database Management" },
-    ],
+    results: [{ title: "Java Application" }, { title: "Database Management" }],
     link: "https://binusianorg-my.sharepoint.com/personal/andi_farhan_binus_ac_id/_layouts/15/onedrive.aspx?id=/personal/andi_farhan_binus_ac_id/Documents/-%20FILE%20PROJECT%20%20(PORTFOLIO)%20-/BAD%20PROJECT&ga=1",
     image: watchesdealer,
   },
@@ -46,10 +37,7 @@ const binusProjects = [
     company: "BINUS University",
     year: "2023",
     title: "LaporAja",
-    results: [
-      { title: "UI/UX Design" },
-      { title: "Mobile App Design" },
-    ],
+    results: [{ title: "UI/UX Design" }, { title: "Mobile App Design" }],
     link: "https://www.figma.com/design/FIUgohVL7E5eeFp9V2X5cV/ABAD-PROJECT?node-id=0-1&t=2vQHwG4mWsbfJfYK-1",
     image: laporaja,
   },
