@@ -85,9 +85,12 @@ export const HeroSection = () => {
             className="size-24 md:size-32 lg:size-44 rounded-full z-20"
             alt="Picture of me"
           />
-          <h1 className="font-beni text-white/90 bg-clip-text text-center text-2xl md:text-5xl font-bold drop-shadow-lg flex items-center gap-2 pt-4 pb-4">
-            Andi Muh. Aizar Farhan
-          </h1>
+          <div className="relative">
+            <span className="absolute inset-0 bg-black/60 rounded-lg md:hidden"></span>
+            <h1 className="relative font-beni text-white/90 bg-clip-text text-center text-2xl md:text-5xl font-bold drop-shadow-lg flex items-center gap-2 pt-4 pb-4">
+              Andi Muh. Aizar Farhan
+            </h1>
+          </div>
           <div className="bg-gray-900 border border-green-500 px-4 py-1.5 inline-flex items-center gap-4 rounded-lg z-10">
             <div className="bg-green-500 size-2.5 rounded-full relative">
               <div className="bg-green-500 absolute inset-0 animate-ping-large rounded-full"></div>
@@ -98,19 +101,16 @@ export const HeroSection = () => {
           </div>
         </div>
         <div className="max-w-6xl mx-auto">
-          <div className="font-bold text-2xl font-beni md:text-5xl text-wrap text-center mt-8 tracking-wide h-[80px] md:h-[120px] flex items-center justify-center">
-            <FlipWords
-              words={["Quality Assurance Engineer", "Front-End Developer"]}
-              duration={2000}
-              className="text-white"
-            />
+          <div className="relative mt-8">
+            <span className="absolute inset-0 bg-black/70 rounded-lg md:hidden"></span>
+            <div className="font-bold text-2xl font-beni md:text-5xl text-wrap text-center tracking-wide h-[80px] md:h-[120px] flex items-center justify-center relative">
+              <FlipWords
+                words={["Quality Assurance Engineer", "Front-End Developer"]}
+                duration={2000}
+                className="text-white"
+              />
+            </div>
           </div>
-          {/* <h1 className="font-bold text-3xl font-serif md:text-5xl text-center mt-8 tracking-wide">
-            Front-End Developer and Quality Assurance
-          </h1> */}
-          {/* <h3 className="font-bold text-lg md:text-2xl text-center mt-4 tracking-wide text-amber-400">
-            (Insya Allah Full-Stack)
-          </h3> */}
           {/* <p className="mt-4 text-center text-white/60 md:text-lg">
             Motivated QA engineer with experience designing and executing tests
             to help improve software quality. Currently serving as a
@@ -119,14 +119,17 @@ export const HeroSection = () => {
             </span>
             through June 2025
           </p> */}
-          <p className="mt-4 text-center text-white/60 md:text-lg">
-            Motivated Quality Assurance Engineer with experience designing and
-            executing tests to help improve software quality.
-            {/* Currently serving as a
-            <span className="p-1.5 text-sky-400 font-bold">
-              Software Quality Assurance Engineer at Synapsis.id
-            </span> */}
-          </p>
+          <div className="relative mt-4">
+            <span className="absolute inset-0 bg-black/70 rounded-lg md:hidden"></span>
+            <p className="relative text-center text-white/60 md:text-lg z-auto">
+              Motivated Quality Assurance Engineer with experience designing and
+              executing tests to help improve software quality.
+              {/* Currently serving as a
+              <span className="p-1.5 text-sky-400 font-bold">
+                Software Quality Assurance Engineer at Synapsis.id
+              </span> */}
+            </p>
+          </div>
         </div>
         <div className="flex flex-col md:flex-row justify-center items-center mt-8 gap-4">
           <a href="#project" className="z-10">
