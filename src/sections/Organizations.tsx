@@ -6,8 +6,9 @@ import CheckCircleIcon from "@/assets/icons/check-circle.svg";
 import ArrowUpRight from "@/assets/icons/arrow-up-right.svg";
 import { SectionHeader } from "@/components/SectionHeader";
 import { Card } from "@/components/Card";
+import { type Project } from "./Projects";
 
-export const organizationsProjects = [
+export const organizationsProjects: Project[] = [
   {
     company: "TFI (BINUS University)",
     year: "2022",

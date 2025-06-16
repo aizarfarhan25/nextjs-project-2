@@ -14,7 +14,27 @@ import grainImage from "@/assets/images/grain.jpg";
 import { SectionHeader } from "@/components/SectionHeader";
 import { Card } from "@/components/Card";
 
-export const portfolioProjects = [
+interface ProjectDetail {
+  overview: string;
+  features: string[];
+  role: {
+    title: string;
+    responsibilities: string[];
+  };
+  technologies: string[];
+}
+
+export interface Project {
+  company: string;
+  year: string;
+  title: string;
+  results: { title: string }[];
+  link: string;
+  image: any;
+  projectDetail?: ProjectDetail;
+}
+
+export const portfolioProjects: Project[] = [
   {
     company: "RevoU (Bootcamp Project)",
     year: "2024",
@@ -26,6 +46,25 @@ export const portfolioProjects = [
     ],
     link: "https://easytrip-ten.vercel.app/",
     image: easytrip,
+    projectDetail: {
+      overview: "EasyTrip is a frontend web project developed as part of the RevoU Bootcamp curriculum. The website serves as a clean and user-friendly guide for travelers interested in exploring Indonesia. Its primary goal is to provide essential information in a visually appealing format, focusing on two key aspects of travel: visiting iconic cities and discovering their most popular local foods.",
+      features: [
+        "Fully Responsive Design: Built with a mobile-first approach, ensuring seamless experience across all devices",
+        "Engaging Homepage: Captivating hero section showcasing Indonesia's natural beauty",
+        "City Exploration Page: Curated list of notable Indonesian cities in clean card layout",
+        "Detailed City & Culinary Guides: Dedicated pages with city introductions and must-try foods",
+        "Intuitive Navigation: Simple and clean navigation bar for easy access to all sections"
+      ],
+      role: {
+        title: "My Role & Responsibilities",
+        responsibilities: [
+          "Web Design (UI): Designed the visual layout, color scheme, and typography",
+          "Frontend Development: Wrote semantic HTML5 and implemented CSS3 styling",
+          "Content Implementation: Structured and presented information about Indonesian cities and cuisine"
+        ]
+      },
+      technologies: ["HTML5", "CSS3", "Flexbox", "Grid", "Media Queries", "Vercel"]
+    }
   },
   {
     company: "RevoU (Bootcamp Project)",
@@ -38,6 +77,26 @@ export const portfolioProjects = [
     ],
     link: "https://niuhome.site/",
     image: niuhome,
+    projectDetail: {
+      overview: "NiuHome is a dynamic frontend project created as part of the RevoU Bootcamp. It functions as a demonstration of a clean, modern, and user-friendly real-estate website. The platform is designed for prospective buyers, offering a curated showcase of properties tailored to various needs and lifestyles. By combining a minimalist design with intuitive functionality, NiuHome aims to provide an elegant and efficient Browse experience, making it easier for users to discover and explore their future dream homes.",
+      features: [
+        "Modern & Responsive UI: Built with Tailwind CSS, delivering flawless experience across all devices",
+        "Dynamic Property Showcase: Well-organized grid of property listings with crucial information",
+        "Interactive Testimonial Slider: JavaScript-powered testimonial section for smooth customer review browsing",
+        "Clear Call-to-Actions: Strategically placed buttons for intuitive user journey",
+        "Clean & Professional Aesthetics: Sophisticated color palette and modern typography for high-end feel"
+      ],
+      role: {
+        title: "My Role & Responsibilities",
+        responsibilities: [
+          "UI Development: Translated design concept into functional website using HTML and Tailwind CSS",
+          "Component-Based Structure: Built reusable UI components for consistency and maintainability",
+          "Frontend Interactivity: Implemented dynamic features with JavaScript",
+          "Responsive Implementation: Used Tailwind CSS utility classes for perfect adaptation to all screens"
+        ]
+      },
+      technologies: ["HTML5", "Tailwind CSS", "JavaScript (ES6)", "Flexbox", "Grid", "DOM Manipulation", "Netlify"]
+    }
   },
   {
     company: "RevoU (Bootcamp Project)",
@@ -50,6 +109,26 @@ export const portfolioProjects = [
     ],
     link: "https://comfie.site/",
     image: comfie,
+    projectDetail: {
+      overview: "Comfie is a frontend website developed as a RevoU Bootcamp project. It serves as the online portfolio for a high-end interior design studio, presented as a specialized brand under the 'NiuHome' umbrella. The project's core purpose is to attract and inform potential clients by showcasing a strong brand identity, a portfolio of work, and a clear design philosophy. The website employs a clean, modern aesthetic with a distinctive color palette and elegant typography to create a sense of style and comfort, directly reflecting the services offered.",
+      features: [
+        "Striking Visual Layout: Sophisticated, asymmetrical layout in hero section and masonry-style project gallery",
+        "Masonry Project Gallery: Visually impressive portfolio display with perfect-fit image layout",
+        "Brand Storytelling Sections: Clear sections for brand values and modern minimalist approach",
+        "Fully Responsive Design: Meticulously crafted layouts that adapt perfectly to all devices",
+        "Integrated Contact Form: Seamless contact section for potential client inquiries"
+      ],
+      role: {
+        title: "My Role & Responsibilities",
+        responsibilities: [
+          "UI Development: Translated visual concept and brand identity using HTML and Tailwind CSS",
+          "Complex Layout Implementation: Built advanced responsive layouts including masonry grid",
+          "Styling and Theming: Applied distinct color scheme and typography for professional interface",
+          "Frontend Interactivity: Implemented JavaScript for mobile navigation and interactive elements"
+        ]
+      },
+      technologies: ["HTML5", "Tailwind CSS", "JavaScript (ES6)", "Grid", "Masonry Layout", "DOM Manipulation", "Netlify"]
+    }
   },
   // {
   //   company: "RevoU (Bootcamp Project)",
