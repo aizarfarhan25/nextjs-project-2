@@ -31,7 +31,7 @@ export function ProjectDialog({ title, projectDetail }: ProjectDialogProps) {
           <span className="absolute inset-0 bg-gradient-to-r from-yellow-300 to-amber-400 opacity-0 group-hover:opacity-100 transition-opacity duration-300" style={{ mixBlendMode: 'overlay' }}></span>
         </Button>
       </DialogTrigger>
-      <DialogContent className="max-w-[800px] max-h-[80vh] overflow-y-auto bg-gradient-to-b from-gray-900 to-gray-950 border border-yellow-500/20">
+      <DialogContent className="max-w-[800px] max-h-[80vh] overflow-y-auto bg-[#0a0a0a] border border-yellow-500/20">
         <DialogHeader>
           <DialogTitle className="text-3xl font-beni bg-gradient-to-r from-yellow-300 to-amber-400 text-transparent bg-clip-text">{title}</DialogTitle>
         </DialogHeader>

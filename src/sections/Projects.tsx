@@ -163,8 +163,41 @@ export const portfolioProjects: Project[] = [
       { title: "Backend" },
       { title: "Python, Flask, PostgreSQL, and Postman" },
     ],
-    link: "https://github.com/revou-fsse-oct24/milestone-3-aizarfarhan25.git",
+    link: "https://github.com/aizarfarhan25/revou-bank",
     image: revoubank,
+    projectDetail: {
+      overview: "RevoU Bank is a comprehensive banking system application developed as part of the RevoU Full-Stack Software Engineering program. This application provides a secure and efficient platform for managing banking operations including user authentication, account management, and various transaction types (deposits, withdrawals, and transfers).",
+      features: [
+        "User Management: Secure user registration and authentication",
+        "Password hashing with bcrypt",
+        "JWT-based authentication system",
+        "User profile management",
+        "Account Management: Multiple account types support",
+        "Unique account number generation",
+        "Balance tracking and management",
+        "Account details viewing",
+        "Transaction Processing: Deposits, withdrawals, and transfers",
+        "Transaction history and reporting",
+        "Security: Secure password storage with bcrypt",
+        "API authentication middleware",
+        "Request ID tracking for all API requests",
+        "Database transaction integrity"
+      ],
+      role: {
+        title: "My Role & Responsibilities",
+        responsibilities: [
+          "Designing and implementing the database schema",
+          "Developing RESTful API endpoints for all banking operations",
+          "Implementing secure authentication and authorization mechanisms",
+          "Creating data models and repositories for business logic",
+          "Setting up transaction processing with proper error handling",
+          "Ensuring data integrity and security throughout the application",
+          "Implementing unit and integration tests",
+          "Documenting the application architecture and API endpoints"
+        ]
+      },
+      technologies: ["Python 3.11+", "Flask", "SQLAlchemy", "PostgreSQL", "Pydantic", "Bcrypt", "JWT", "Pytest", "Taskipy"]
+    }
   },
   // {
   //   company: "Quantum Dynamics",
