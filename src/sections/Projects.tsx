@@ -172,7 +172,6 @@ export const portfolioProjects: Project[] = [
         "Order Confirmation: Detailed order summary after successful purchase",
         "Responsive Design: Optimized for all device sizes (mobile, tablet, desktop)",
         "Promotional Elements: Support for discounts, sales tags, and promotional banners",
-        "Social Sharing: Share products on social media platforms",
         "Live Chat Integration: Tawk.to chat integration for customer support"
       ],
       role: {
@@ -180,7 +179,7 @@ export const portfolioProjects: Project[] = [
         responsibilities: [
           "Designed and implemented responsive UI components using React and Tailwind CSS",
           "Created reusable components for product cards, forms, and UI elements",
-          "Implemented state management using React Context API for cart, wishlist, and authentication",
+          // "Implemented state management using React Context API for cart, wishlist, and authentication",
           "Developed dynamic routing for product pages, category pages, and user account sections",
           "Built the product listing page with sorting, filtering, and pagination functionality",
           "Implemented the product detail page with image gallery, specifications, and add-to-cart functionality",
@@ -188,11 +187,11 @@ export const portfolioProjects: Project[] = [
           "Developed the wishlist feature with persistent storage and synchronization with the cart",
           "Built the user profile management system with editable sections for personal information, addresses, and payment methods",
           "Implemented the order tracking system with visual timeline representation",
-          "Connected frontend components to backend API endpoints using Axios",
+          "Connected frontend components to opensource API endpoints using Axios",
           "Implemented authentication token management for secure API requests",
           "Created data fetching hooks with SWR for efficient caching and revalidation",
-          "Handled API error states with appropriate user feedback",
-          "Wrote unit tests for critical components and hooks",
+          // "Handled API error states with appropriate user feedback",
+          // "Wrote unit tests for critical components and hooks",
           "Optimized performance with lazy loading and pagination",
           "Implemented skeleton loaders for improved perceived performance",
           "Ensured cross-browser compatibility and responsive design"
@@ -200,7 +199,7 @@ export const portfolioProjects: Project[] = [
       },
       technologies: [
         "Next.js", "React", "TypeScript", "Tailwind CSS", "CSS Modules", "React Context API", "SWR", 
-        "Axios", "REST API", "Jest", "React Testing Library", "ESLint", "Prettier", "Git", "Vercel"
+        "Axios", "REST API", "ESLint", "Prettier", "Git", "Vercel"
       ]
     }
   },
