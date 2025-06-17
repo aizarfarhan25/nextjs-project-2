@@ -157,22 +157,32 @@ export const AboutSection = () => {
                 </div>
               </div>
             </Card>
-            <Card className="h-[320px] md:h-[475px] lg:h-[550px] md:col-span-3 lg:col-span-2">
-              <CardHeader
-                title="My Toolbox"
-                description="Explore the technologies and tools I use to crate all of my
-                projects and exceptional digital excperiences."
-                className=""
+            <Card className="h-[360px] md:h-[530px] lg:h-[600px] md:col-span-3 lg:col-span-2 overflow-hidden relative">
+              <div className="absolute inset-0 bg-gradient-to-br from-blue-500/5 to-cyan-500/5 opacity-30"></div>
+              <div className="relative z-10">
+                <CardHeader
+                  title={<motion.span 
+                    initial={{ opacity: 0, y: -20 }}
+                    animate={{ opacity: 1, y: 0 }}
+                    transition={{ duration: 0.5 }}
+                    className="text-white bg-clip-text inline-block"
+                  >
+                    My Toolbox
+                  </motion.span>}
+                  description="Explore the technologies and tools I use to crate all of my
+                  projects and exceptional digital excperiences."
+                  className=""
+                />
+              </div>
+              <ToolboxItems
+                items={toolboxItems}
+                className="md:mt-10 lg:mt-16 relative z-10"
+                itemsWrapperClassName="animate-move-left [animation-duration:30s] hover:[animation-play-state:paused]"
               />
               <ToolboxItems
                 items={toolboxItems}
-                className="md:mt-10 lg:mt-16"
-                itemsWrapperClassName="animate-move-left [animation-duration:30s]"
-              />
-              <ToolboxItems
-                items={toolboxItems}
-                className="mt-6"
-                itemsWrapperClassName="animate-move-right [animation-duration:15s]"
+                className="mt-6 relative z-10"
+                itemsWrapperClassName="animate-move-right [animation-duration:15s] hover:[animation-play-state:paused]"
               />
             </Card>
           </div>
