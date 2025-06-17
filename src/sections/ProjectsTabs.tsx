@@ -129,7 +129,7 @@ export const ProjectsTabs = () => {
                     <div className="flex flex-col md:flex-row gap-4 mt-6">
                       <a href={project.link} target="_blank" className="flex-1 md:flex-initial">
                         <button className="bg-white text-gray-950 h-10 w-full min-w-[180px] px-5 rounded-xl font-semibold inline-flex items-center justify-center gap-2">
-                          <span>Documentation</span>
+                          <span>View Design</span>
                           <ArrowUpRight className="size-4" />
                         </button>
                       </a>
