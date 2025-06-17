@@ -32,6 +32,30 @@ export const organizationsProjects: Project[] = [
     results: [{ title: "Social Activity" }, { title: "Volunteer" }],
     link: "https://docs.google.com/document/d/1e09XcDP7n2JQE4iwijbX8Hhyqsei1a1a/edit?usp=sharing&ouid=117791301637141992106&rtpof=true&sd=true",
     image: agama,
+    projectDetail: {
+      overview: "The Socialization of Religious Moderation was an educational initiative organized by TFI (BINUS University) aimed at promoting understanding, tolerance, and respect among different religious communities. The project focused on educating participants about the importance of moderate religious views and practices in a diverse society.",
+      features: [
+        "Educational workshops on religious diversity and tolerance",
+        "Interactive discussions on religious moderation principles",
+        "Engaging games and activities to promote interfaith understanding",
+        "Documentation of the event for future reference and improvement",
+        "Comprehensive report compilation to assess the impact and outcomes"
+      ],
+      role: {
+        title: "Event Volunteer and Contributor",
+        responsibilities: [
+          "Participated in the preparation of educational materials and content for the socialization event",
+          "Actively contributed to the execution of the event, including material delivery and facilitating interactive games",
+          "Handled documentation responsibilities to capture key moments and participant engagement",
+          "Collaborated in the compilation and writing of the post-event report, analyzing outcomes and impact"
+        ]
+      },
+      technologies: [
+        "Microsoft PowerPoint",
+        "Google Docs",
+        "Quizizz",
+      ]
+    }
   },
 ];
 
