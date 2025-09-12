@@ -114,7 +114,7 @@ export const WorkExperienceSection = () => {
           {workExperiences.map((experience, experienceIndex) => (
             <Card
               key={experience.company}
-              className="px-8 pt-8 pb-8 md:pt-12 md:px-10 lg:pt-16 lg:px-20 sticky"
+              className="px-8 pt-10 pb-12 md:pt-12 md:px-10 lg:pt-16 lg:px-20 sticky"
               style={{
                 top: `calc(64px + ${experienceIndex * 40}px)`,
               }}
