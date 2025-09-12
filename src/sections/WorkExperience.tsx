@@ -111,12 +111,12 @@ export const WorkExperienceSection = () => {
           description="Here's an overview of my professional experience and the skills I've developed throughout my career."
         />
         <div className="flex flex-col mt-10 md:mt-20 gap-20">
-          {workExperiences.map((experience, index) => (
+          {workExperiences.map((experience, experienceIndex) => (
             <Card
               key={experience.company}
-              className="px-8 pt-8 pb-0 md:pt-12 md:px-10 lg:pt-16 lg:px-20 sticky"
+              className="px-8 pt-8 pb-8 md:pt-12 md:px-10 lg:pt-16 lg:px-20 sticky"
               style={{
-                top: `calc(64px + ${index * 40}px)`,
+                top: `calc(64px + ${experienceIndex * 40}px)`,
               }}
             >
               <div className="lg:grid lg:grid-cols-2 lg:gap-16">
