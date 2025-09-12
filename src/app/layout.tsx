@@ -35,6 +35,11 @@ export const metadata: Metadata = {
   description: "Front-End Developer and Quality Assurance",
 };
 
+export const viewport = {
+  themeColor: "#000000",
+  colorScheme: "dark",
+};
+
 export default function RootLayout({
   children,
 }: Readonly<{
