@@ -1,0 +1,7 @@
+<svg width="120" height="60" viewBox="0 0 120 60" fill="none" xmlns="http://www.w3.org/2000/svg">
+  <rect width="120" height="60" rx="8" fill="#FF6B35"/>
+  <text x="60" y="32" text-anchor="middle" fill="white" font-family="Arial, sans-serif" font-size="14" font-weight="bold">SYNAPSIS</text>
+  <text x="60" y="48" text-anchor="middle" fill="#FFE5DD" font-family="Arial, sans-serif" font-size="10">.id</text>
+  <path d="M15 15 L25 25 L15 35" stroke="white" stroke-width="2" fill="none" opacity="0.4"/>
+  <path d="M95 25 L105 15 L105 35" stroke="white" stroke-width="2" fill="none" opacity="0.4"/>
+</svg>
