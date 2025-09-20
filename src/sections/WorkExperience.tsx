@@ -194,16 +194,18 @@ export const WorkExperienceSection = () => {
                   </div>
                 </div>
                 <div className="flex justify-center md:justify-end items-center md:items-start mt-6 md:mt-0">
-                  <div className="w-48 h-24 flex items-center justify-center bg-white rounded-lg p-4 shadow-sm">
-                    {companyLogos[experience.company] && (
+                  <div className="w-64 h-32 flex items-center justify-center bg-white rounded-lg p-6 shadow-sm">
+                  {companyLogos[experience.company] && (
+                    <div className="flex items-center justify-center w-full h-full">
                       <Image
                         src={companyLogos[experience.company]}
                         alt={`${experience.company} logo`}
-                        width={160}
-                        height={80}
-                        className="object-contain"
+                        width={240}
+                        height={120}
+                        className="object-contain max-w-full max-h-full"
                       />
-                    )}
+                    </div>
+                  )}
                   </div>
                 </div>
               </div>
