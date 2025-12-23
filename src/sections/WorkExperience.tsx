@@ -137,7 +137,7 @@ export const workExperiences: WorkExperience[] = [
   {
     company: "Qoala",
     position: "Software Development Engineer In Test",
-    period: "Sept 2025 - Present",
+    period: "Oct 2025 - Present",
     location: "Jakarta, Indonesia",
     description: "Full Time",
     link: "https://qoala.com/",
