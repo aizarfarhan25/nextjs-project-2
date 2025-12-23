@@ -69,7 +69,7 @@ export function WorkExperienceDialog({ title, company, period, experienceDetail,
                   className="space-y-4"
                 >
                   <h3 className="text-lg font-semibold text-yellow-400 mb-2">Role Overview</h3>
-                  <p className="text-gray-300 leading-relaxed">{experienceDetail.overview}</p>
+                  <p className="text-gray-300 leading-relaxed py-8">{experienceDetail.overview}</p>
                 </motion.div>
               </TabContent>
               
@@ -81,7 +81,7 @@ export function WorkExperienceDialog({ title, company, period, experienceDetail,
                   className="space-y-4"
                 >
                   <h3 className="text-lg font-semibold text-yellow-400 mb-2">Key Achievements</h3>
-                  <ul className="grid grid-cols-1 gap-3">
+                  <ul className="grid grid-cols-1 gap-3 py-8">
                     {experienceDetail.achievements.map((achievement, index) => (
                       <motion.li 
                         key={index} 
@@ -106,7 +106,7 @@ export function WorkExperienceDialog({ title, company, period, experienceDetail,
                   className="space-y-4"
                 >
                   <h3 className="text-lg font-semibold text-yellow-400 mb-2">Key Responsibilities</h3>
-                  <ul className="space-y-3">
+                  <ul className="space-y-3 py-8">
                     {experienceDetail.responsibilities.map((responsibility, index) => (
                       <motion.li 
                         key={index} 
@@ -131,7 +131,7 @@ export function WorkExperienceDialog({ title, company, period, experienceDetail,
                   className="space-y-4"
                 >
                   <h3 className="text-lg font-semibold text-yellow-400 mb-2">Technologies Used</h3>
-                  <div className="flex flex-wrap gap-2">
+                  <div className="flex flex-wrap gap-2 py-8">
                     {experienceDetail.technologies.map((tech, index) => (
                       <motion.span
                         key={index}

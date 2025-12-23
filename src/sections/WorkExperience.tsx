@@ -13,6 +13,7 @@ const companyLogos: { [key: string]: string } = {
   "Kalbe Farma": "/assets/images/LOGO KALBE.png",
   "Synapsis.id": "/assets/images/LOGO SYNAPSIS.png",
   "Astra International": "/assets/images/LOGO ASTRA.png",
+  Qoala: "/assets/images/LOGO QOALA.png",
 };
 
 interface WorkExperienceDetail {
@@ -38,21 +39,22 @@ export const workExperiences: WorkExperience[] = [
     position: "Quality Assurance Intern",
     period: "Feb 2024 - Feb 2025",
     location: "Jakarta, Indonesia",
-    description: "Internship",  
+    description: "Internship",
     link: "https://www.kalbe.co.id/",
     experienceDetail: {
-      overview: "As a Quality Assurance Intern at Kalbe Farma, I contributed to ensuring the quality and reliability of pharmaceutical software systems. This role provided me with valuable experience in testing methodologies, automation, and compliance requirements specific to the pharmaceutical industry.",
+      overview:
+        "As a Quality Assurance Intern at Kalbe Farma, I contributed to ensuring the quality and reliability of pharmaceutical software systems. This role provided me with valuable experience in testing methodologies, automation, and compliance requirements specific to the pharmaceutical industry.",
       achievements: [
         "Improved test coverage by 40% for 3 major projects through automated testing implementation",
         "Built a comprehensive project dashboard for real-time testing progress tracking",
         "Established standardized testing documentation processes for the team",
-        "Successfully validated API functionality for critical pharmaceutical systems"
+        "Successfully validated API functionality for critical pharmaceutical systems",
       ],
       responsibilities: [
         "Created key documents like test plans, scenario tests, and issue logs, which established a clear and organized testing process for the team.",
-        "Improved test coverage by 40% for 3 major projects by writing and running automated tests script using Playwright.",
+        "Developing and running automated tests script using Playwright.",
         "Validated API functionality and security for key services using Postman and Hoppscotch, preventing potential integration issues and enhancing system reliability.",
-        "Built a project dashboard to track testing progress, giving the team and managers a clear, live view of project status."
+        "Built a project dashboard to track testing progress, giving the team and managers a clear, live view of project status.",
       ],
       technologies: [
         "Manual Testing",
@@ -62,9 +64,9 @@ export const workExperiences: WorkExperience[] = [
         "Test Documentation",
         "Microsoft Office Suite",
         "Playwright",
-        "Agile Methodologies"
-      ]
-    }
+        "Agile Methodologies",
+      ],
+    },
   },
   {
     company: "Synapsis.id",
@@ -74,18 +76,19 @@ export const workExperiences: WorkExperience[] = [
     description: "Internship",
     link: "https://synapsis.id",
     experienceDetail: {
-      overview: "As a Quality Assurance Engineer Intern at Synapsis.id, I worked on ensuring the quality of client websites and super apps. This role enhanced my skills in test automation, API testing, and collaborative development processes while working with diverse client projects.",
+      overview:
+        "As a Quality Assurance Engineer Intern at Synapsis.id, I worked on ensuring the quality of client websites and super apps. This role enhanced my skills in test automation, API testing, and collaborative development processes while working with diverse client projects.",
       achievements: [
         "Created over 1,000 detailed test cases for client websites and super apps",
         "Reduced regression testing time by 40% through automated testing suite implementation",
         "Successfully validated functionality and security for multiple client API integrations",
-        "Collaborated effectively with development teams to ensure stable product releases"
+        "Collaborated effectively with development teams to ensure stable product releases",
       ],
       responsibilities: [
-        "Created over 1,000 detailed test cases for client websites and super apps, to ensure the functionality, performance, and reliability of client websites.",
-        "Reduced regression testing time by 40% by developing and implementing an automated testing suite, which helped the team release new features more quickly.",
+        "Created detailed test cases for client websites and super apps, to ensure the functionality, performance, and reliability of client websites.",
+        "Developing and implementing an automated testing suite, which helped the team release new features more quickly and reduced time for regression testing.",
         "Executed comprehensive API tests with Postman to validate functionality and security, ensuring stable and seamless integration between system components.",
-        "Worked closely with developers to test bug fixes, confirming that issues were resolved and ensuring the final product was stable"
+        "Worked closely with developers to test bug fixes, confirming that issues were resolved and ensuring the final product was stable",
       ],
       technologies: [
         "Manual Testing",
@@ -95,29 +98,30 @@ export const workExperiences: WorkExperience[] = [
         "SQL",
         "Git",
         "Agile Methodologies",
-        "Microsoft Office Suite"
-      ]
-    }
+        "Microsoft Office Suite",
+      ],
+    },
   },
   {
     company: "Astra International",
     position: "Software Quality Assurance",
     period: "June 2025 - Sept 2025",
     location: "Jakarta, Indonesia",
-    description: "Contact",
+    description: "Contract",
     link: "https://www.astra.co.id/",
     experienceDetail: {
-      overview: "As a Software Quality Assurance professional at Astra International, I focused on maintaining high-quality standards for enterprise software systems. This role involved extensive regression testing, automation development, and close collaboration with development teams to ensure product stability.",
+      overview:
+        "As a Software Quality Assurance professional at Astra International, I focused on maintaining high-quality standards for enterprise software systems. This role involved extensive regression testing, automation development, and close collaboration with development teams to ensure product stability.",
       achievements: [
         "Executed comprehensive regression tests across 1000+ scenarios ensuring system stability",
         "Increased personal testing efficiency by 20% through automation script development",
         "Successfully maintained product stability through effective bug identification and validation",
-        "Contributed to seamless system updates without negative impact on existing functionalities"
+        "Contributed to seamless system updates without negative impact on existing functionalities",
       ],
       responsibilities: [
-        "Executed comprehensive regression tests across 1000+ scenarios to ensure system updates did not negatively impact existing functionalities and maintained overall product stability.",
-        "Developed automation scripts for 3 features, increasing personal testing efficiency by 20%.",
-        "Collaborated closely with developers to identify, replicate, and validate bug fixes, ensuring effective issue resolution and final product stability."
+        "Executed comprehensive regression tests to ensure system updates did not negatively impact existing functionalities and maintained overall product stability.",
+        "Developed automation scripts for increasing personal testing efficiency",
+        "Collaborated closely with developers to identify, replicate, and validate bug fixes, ensuring effective issue resolution and final product stability.",
       ],
       technologies: [
         "Manual Testing",
@@ -126,14 +130,51 @@ export const workExperiences: WorkExperience[] = [
         "SQL Server Management Studio",
         "Microsoft Office Suite",
         "Agile Methodologies",
-        "Git"
-      ]
-    }
-  }
+        "Git",
+      ],
+    },
+  },
+  {
+    company: "Qoala",
+    position: "Software Development Engineer In Test",
+    period: "Sept 2025 - Present",
+    location: "Jakarta, Indonesia",
+    description: "Full Time",
+    link: "https://qoala.com/",
+    experienceDetail: {
+      overview:
+        "As a Software Development Engineer In Test at Qoala, I managed both manual and automated testing to ensure high product quality and a smooth user experience. I built a scalable automation framework from scratch using Playwright while performing rigorous manual testing for complex business flows.",
+      achievements: [
+        "Built a scalable automation framework using Playwright",
+        "Execute E2E tests for over 100+ scenarios",
+        "Implemented comprehensive E2E tests covering full business cycles like Quotation, Approvals, and Claims for over 7 Bank",
+        "Improve test efficiency by 80% through parallel execution and optimized test scripts",
+        "Designed a modular Page Object Model (POM) architecture",
+        "Conducted manual testing covering positive, negative, and edge cases",
+      ],
+      responsibilities: [
+        "Developed and maintained automated test scripts for critical features including Authentication and Workflow Approvals.",
+        "Performed detailed API testing using Postman and Newman to verify internal and external system integrations.",
+        "Collaborated with developers on bug reproduction, root cause analysis, and sprint planning.",
+        "Executed ad-hoc production testing and managed test data using SQL for specific scenarios.",
+      ],
+      technologies: [
+        "Playwright",
+        "TypeScript",
+        "Postman",
+        "SQL",
+        "CI/CD",
+        "Git",
+        "JIRA",
+        "Agile Methodologies",
+      ],
+    },
+  },
 ];
 
 export const WorkExperienceSection = () => {
-  const [selectedExperience, setSelectedExperience] = useState<WorkExperience | null>(null);
+  const [selectedExperience, setSelectedExperience] =
+    useState<WorkExperience | null>(null);
   const [isDialogOpen, setIsDialogOpen] = useState(false);
 
   const handleViewDetails = (experience: WorkExperience) => {
@@ -176,14 +217,16 @@ export const WorkExperienceSection = () => {
                   <hr className="border-t-2 border-white/5 mt-4 md:mt-5" />
                   <div className="mt-4 md:mt-6 text-white/60">
                     <p className="mb-2">
-                      <span className="font-semibold text-white">Location:</span>{" "}
+                      <span className="font-semibold text-white">
+                        Location:
+                      </span>{" "}
                       {experience.location}
                     </p>
                     <p>{experience.description}</p>
                   </div>
                   <div className="mt-6 md:mt-8">
                     {experience.experienceDetail && (
-                      <button 
+                      <button
                         onClick={() => handleViewDetails(experience)}
                         className="bg-white text-gray-950 h-10 w-full min-w-[180px] px-5 rounded-xl font-semibold inline-flex items-center justify-center gap-2"
                       >
@@ -195,17 +238,17 @@ export const WorkExperienceSection = () => {
                 </div>
                 <div className="flex justify-center md:justify-end items-center md:items-start mt-6 md:mt-0">
                   <div className="w-64 h-32 flex items-center justify-center bg-white rounded-lg p-6 shadow-sm">
-                  {companyLogos[experience.company] && (
-                    <div className="flex items-center justify-center w-full h-full">
-                      <Image
-                        src={companyLogos[experience.company]}
-                        alt={`${experience.company} logo`}
-                        width={240}
-                        height={120}
-                        className="object-contain max-w-full max-h-full"
-                      />
-                    </div>
-                  )}
+                    {companyLogos[experience.company] && (
+                      <div className="flex items-center justify-center w-full h-full">
+                        <Image
+                          src={companyLogos[experience.company]}
+                          alt={`${experience.company} logo`}
+                          width={240}
+                          height={120}
+                          className="object-contain max-w-full max-h-full"
+                        />
+                      </div>
+                    )}
                   </div>
                 </div>
               </div>
@@ -213,7 +256,7 @@ export const WorkExperienceSection = () => {
           ))}
         </div>
       </div>
-      
+
       {selectedExperience && (
         <WorkExperienceDialog
           title={selectedExperience.position}

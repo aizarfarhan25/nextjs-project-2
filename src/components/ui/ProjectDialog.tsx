@@ -74,7 +74,7 @@ export function ProjectDialog({ title, projectDetail }: ProjectDialogProps) {
                   className="space-y-4"
                 >
                   <h3 className="text-lg font-semibold text-yellow-400 mb-2">Project Overview</h3>
-                  <p className="text-gray-300 leading-relaxed">{projectDetail.overview}</p>
+                  <p className="text-gray-300 leading-relaxed py-8">{projectDetail.overview}</p>
                 </motion.div>
               </TabContent>
               
@@ -86,7 +86,7 @@ export function ProjectDialog({ title, projectDetail }: ProjectDialogProps) {
                   className="space-y-4"
                 >
                   <h3 className="text-lg font-semibold text-yellow-400 mb-2">Key Features</h3>
-                  <ul className="grid grid-cols-1 md:grid-cols-2 gap-3">
+                  <ul className="grid grid-cols-1 md:grid-cols-2 gap-3 py-8">
                     {projectDetail.features.map((feature, index) => (
                       <motion.li 
                         key={index} 
@@ -111,7 +111,7 @@ export function ProjectDialog({ title, projectDetail }: ProjectDialogProps) {
                   className="space-y-4"
                 >
                   <h3 className="text-lg font-semibold text-yellow-400 mb-2">{projectDetail.role.title}</h3>
-                  <ul className="space-y-3">
+                  <ul className="space-y-3 py-8">
                     {projectDetail.role.responsibilities.map((responsibility, index) => (
                       <motion.li 
                         key={index} 
@@ -136,7 +136,7 @@ export function ProjectDialog({ title, projectDetail }: ProjectDialogProps) {
                   className="space-y-4"
                 >
                   <h3 className="text-lg font-semibold text-yellow-400 mb-2">Technologies Used</h3>
-                  <div className="flex flex-wrap gap-2">
+                  <div className="flex flex-wrap gap-2 py-8">
                     {projectDetail.technologies.map((tech, index) => (
                       <motion.span
                         key={index}
