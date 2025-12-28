@@ -163,7 +163,6 @@ export const workExperiences: WorkExperience[] = [
         "TypeScript",
         "Postman",
         "SQL",
-        "CI/CD",
         "Git",
         "JIRA",
         "Agile Methodologies",
