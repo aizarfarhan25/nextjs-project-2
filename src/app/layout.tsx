@@ -46,7 +46,18 @@ export default function RootLayout({
   children: React.ReactNode;
 }>) {
   return (
-    <html lang="en">
+    <html lang="en" className="dark">
+      <head>
+        <script
+          dangerouslySetInnerHTML={{
+            __html: `
+              (function() {
+                document.documentElement.classList.add('dark');
+              })();
+            `,
+          }}
+        />
+      </head>
       <body
         className={twMerge(
           // inter.className,

@@ -146,7 +146,7 @@ export const AboutSection = () => {
             <Card className="md:min-h-[475px] lg:min-h-[550px] md:col-span-2 lg:col-span-1 flex flex-col">
               <CardHeader
                 title="Who I Am"
-                description="My name is Andi Muh. Aizar Farhan, but you can call me Aizar. I have hands-on experience as a QA engineer, where I contributed to designing and executing tests to improve software quality. Currently, I am expanding my skills in full stack software engineering at RevoU, with a keen interest in software development, design, and testing."
+                description="My name is Andi Muh. Aizar Farhan, but you can call me Aizar. I'm a Software Development Engineer In Test (SDET) at Qoala, building scalable automation frameworks and ensuring high product quality. I graduated from BINUS University and completed the RevoU Full-Stack Software Engineering Bootcamp."
               />
               <div className="flex gap-4 px-10 md:px-3 lg:px-4 mt-6 justify-center mb-6">
                 <div className="w-36">
