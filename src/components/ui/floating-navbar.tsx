@@ -8,6 +8,7 @@ import {
 } from "framer-motion";
 import { cn } from "@/lib/utils";
 import Link from "next/link";
+import { useRef } from "react";
 
 export const FloatingNav = ({
   navItems,
@@ -23,6 +24,7 @@ export const FloatingNav = ({
   const { scrollYProgress } = useScroll();
 
   const [visible, setVisible] = useState(false);
+  const hideTimeoutRef = useRef<NodeJS.Timeout | null>(null);
 
   useMotionValueEvent(scrollYProgress, "change", (current) => {
     // Check if current is not undefined and is a number
@@ -31,11 +33,19 @@ export const FloatingNav = ({
 
       if (scrollYProgress.get() < 0.05) {
         setVisible(false);
+        if (hideTimeoutRef.current) clearTimeout(hideTimeoutRef.current);
       } else {
         if (direction < 0) {
           setVisible(true);
+          // Clear existing timeout
+          if (hideTimeoutRef.current) clearTimeout(hideTimeoutRef.current);
+          // Set new timeout to hide after 2 seconds
+          hideTimeoutRef.current = setTimeout(() => {
+            setVisible(false);
+          }, 2000);
         } else {
           setVisible(false);
+          if (hideTimeoutRef.current) clearTimeout(hideTimeoutRef.current);
         }
       }
     }
