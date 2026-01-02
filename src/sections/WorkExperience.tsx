@@ -194,27 +194,27 @@ export const WorkExperienceSection = () => {
           title="Work Experience"
           description="Here's an overview of my professional experience and the skills I've developed throughout my career."
         />
-        <div className="flex flex-col mt-10 md:mt-20 gap-20">
+        <div className="flex flex-col mt-10 md:mt-20 gap-4 md:gap-6">
           {workExperiences.map((experience, experienceIndex) => (
             <Card
               key={experience.company}
-              className="px-8 pt-10 pb-8 md:pt-12 md:px-10 lg:pt-16 lg:px-20 sticky"
+              className="px-5 pt-6 pb-4 md:pt-8 md:px-10 md:pb-6 lg:pt-10 lg:px-16 sticky"
               style={{
                 top: `calc(64px + ${experienceIndex * 40}px)`,
               }}
             >
-              <div className="flex flex-col md:flex-row gap-8 md:gap-16">
+              <div className="flex flex-col md:flex-row gap-2 md:gap-8">
                 <div className="flex-1">
-                  <div className="bg-gradient-to-r from-yellow-300 to-amber-400 inline-flex gap-2 font-bold uppercase tracking-widest text-sm text-transparent bg-clip-text">
+                  <div className="bg-gradient-to-r from-yellow-300 to-amber-400 inline-flex gap-2 font-bold uppercase tracking-widest text-xs md:text-sm text-transparent bg-clip-text">
                     <span>{experience.company}</span>
                     <span>&bull;</span>
                     <span>{experience.period}</span>
                   </div>
-                  <h3 className="font-beni font-semibold text-2xl mt-2 md:mt-5 md:text-4xl">
+                  <h3 className="font-beni font-semibold text-xl mt-1 md:mt-3 md:text-3xl lg:text-4xl">
                     {experience.position}
                   </h3>
-                  <hr className="border-t-2 border-white/5 mt-4 md:mt-5" />
-                  <div className="mt-4 md:mt-6 text-white/60">
+                  <hr className="border-t-2 border-white/5 mt-2 md:mt-4" />
+                  <div className="mt-2 md:mt-4 text-white/60">
                     <p className="mb-2">
                       <span className="font-semibold text-white">
                         Location:
@@ -223,7 +223,7 @@ export const WorkExperienceSection = () => {
                     </p>
                     <p>{experience.description}</p>
                   </div>
-                  <div className="mt-6 md:mt-8">
+                  <div className="mt-4 md:mt-6">
                     {experience.experienceDetail && (
                       <button
                         onClick={() => handleViewDetails(experience)}
@@ -235,8 +235,8 @@ export const WorkExperienceSection = () => {
                     )}
                   </div>
                 </div>
-                <div className="flex justify-center md:justify-end items-center md:items-start mt-6 md:mt-0">
-                  <div className="w-64 h-32 flex items-center justify-center bg-white rounded-lg p-6 shadow-sm">
+                <div className="flex justify-center md:justify-end items-center md:items-start mt-3 md:mt-0">
+                  <div className="w-48 h-20 md:w-64 md:h-[120px] flex items-center justify-center bg-white rounded-lg p-3 md:p-6 shadow-sm">
                     {companyLogos[experience.company] && (
                       <div className="flex items-center justify-center w-full h-full">
                         <Image
