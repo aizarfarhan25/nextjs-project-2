@@ -154,7 +154,7 @@ export const workExperiences: WorkExperience[] = [
       ],
       responsibilities: [
         "Developed and maintained automated test scripts for critical features including Authentication and Workflow Approvals.",
-        "Performed detailed API testing using Postman and Newman to verify internal and external system integrations.",
+        "Performed detailed API testing using Postman to verify internal and external system integrations.",
         "Collaborated with developers on bug reproduction, root cause analysis, and sprint planning.",
         "Executed ad-hoc production testing and managed test data using SQL for specific scenarios.",
       ],
