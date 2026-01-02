@@ -1,0 +1,8 @@
+<svg width="120" height="60" viewBox="0 0 120 60" fill="none" xmlns="http://www.w3.org/2000/svg">
+  <rect width="120" height="60" rx="8" fill="#1B365D"/>
+  <text x="60" y="32" text-anchor="middle" fill="white" font-family="Arial, sans-serif" font-size="14" font-weight="bold">ASTRA</text>
+  <text x="60" y="48" text-anchor="middle" fill="#B8D4E3" font-family="Arial, sans-serif" font-size="9">INTERNATIONAL</text>
+  <polygon points="20,20 30,15 30,25" fill="white" opacity="0.3"/>
+  <polygon points="90,20 100,15 100,25" fill="white" opacity="0.3"/>
+  <rect x="45" y="12" width="30" height="2" fill="white" opacity="0.4"/>
+</svg>

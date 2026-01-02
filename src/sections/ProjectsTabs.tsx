@@ -7,6 +7,7 @@ import Image from "next/image";
 import CheckCircleIcon from "@/assets/icons/check-circle.svg";
 import ArrowUpRight from "@/assets/icons/arrow-up-right.svg";
 import { ProjectDialog } from "@/components/ui/ProjectDialog";
+import { ScrollReveal } from "@/components/ui/ScrollReveal";
 
 import { portfolioProjects } from "./Projects";
 import { binusProjects } from "./BinusProject";
@@ -19,21 +20,21 @@ export const ProjectsTabs = () => {
       value: "revou",
       content: (
         <div className="w-full overflow-visible relative h-full rounded-2xl p-2 md:p-10 border border-white/5 bg-gradient-to-br from-white/5 to-white/0">
-        <SectionHeader
-          eyebrow="bootcamp projects gallery"
-          title="RevoU Projects"
-          description="Here are all the projects I worked on during my participation in the
+          <SectionHeader
+            eyebrow="bootcamp projects gallery"
+            title="RevoU Projects"
+            description="Here are all the projects I worked on during my participation in the
           RevoU Fullstack Software Engineering Bootcamp."
-        />
+          />
           <div className="flex flex-col gap-4 md:gap-8 mt-10">
             {portfolioProjects.map((project, projectIndex) => (
-            <Card
-            key={project.title}
-            className="px-8 pt-8 pb-0 md:pt-12 md:px-10 lg:pt-16 lg:px-20 sticky"
-            style={{
-              top: `calc(64px + ${projectIndex * 40}px)`,
-            }}
-          >
+              <Card
+                key={project.title}
+                className="px-8 pt-8 pb-0 md:pt-12 md:px-10 lg:pt-16 lg:px-20 sticky"
+                style={{
+                  top: `calc(64px + ${projectIndex * 40}px)`,
+                }}
+              >
                 <div className="lg:grid lg:grid-cols-2 lg:gap-16">
                   <div className="lg:pb-16">
                     <div className="bg-gradient-to-r from-yellow-300 to-amber-400 inline-flex gap-2 font-bold uppercase tracking-widest text-sm text-transparent bg-clip-text">
@@ -90,20 +91,20 @@ export const ProjectsTabs = () => {
       value: "university",
       content: (
         <div className="w-full overflow-visible relative h-full rounded-2xl p-2 md:p-10 border border-white/5 bg-gradient-to-br from-white/5 to-white/0">
-        <SectionHeader
-          eyebrow="university projects gallery"
-          title="University Projects"
-          description="In this section, you will find an overview of my projects during my time at Bina Nusantara University."
-        />
+          <SectionHeader
+            eyebrow="university projects gallery"
+            title="University Projects"
+            description="In this section, you will find an overview of my projects during my time at Bina Nusantara University."
+          />
           <div className="flex flex-col gap-4 md:gap-8 mt-10">
             {binusProjects.map((project, projectIndex) => (
-            <Card
-            key={project.title}
-            className="px-8 pt-8 pb-0 md:pt-12 md:px-10 lg:pt-16 lg:px-20 sticky"
-            style={{
-              top: `calc(64px + ${projectIndex * 40}px)`,
-            }}
-          >
+              <Card
+                key={project.title}
+                className="px-8 pt-8 pb-0 md:pt-12 md:px-10 lg:pt-16 lg:px-20 sticky"
+                style={{
+                  top: `calc(64px + ${projectIndex * 40}px)`,
+                }}
+              >
                 <div className="lg:grid lg:grid-cols-2 lg:gap-16">
                   <div className="lg:pb-16">
                     <div className="bg-gradient-to-r from-yellow-300 to-amber-400 inline-flex gap-2 font-bold uppercase tracking-widest text-sm text-transparent bg-clip-text">
@@ -160,20 +161,20 @@ export const ProjectsTabs = () => {
       value: "organizations",
       content: (
         <div className="w-full overflow-visible relative h-full rounded-2xl p-2 md:p-10 border border-white/5 bg-gradient-to-br from-white/5 to-white/0">
-       <SectionHeader
-          eyebrow="organizations gallery"
-          title="Organizations Experience"
-          description="In this section, you will find an overview of my organizational experiences during my time at Bina Nusantara University. These experiences played a significant role in enhancing my skills, fostering collaboration, and contributing to the social community as well as the campus environment."
-        />
+          <SectionHeader
+            eyebrow="organizations gallery"
+            title="Organizations Experience"
+            description="In this section, you will find an overview of my organizational experiences during my time at Bina Nusantara University. These experiences played a significant role in enhancing my skills, fostering collaboration, and contributing to the social community as well as the campus environment."
+          />
           <div className="flex flex-col gap-4 md:gap-8 mt-10">
             {organizationsProjects.map((project, projectIndex) => (
-            <Card
-            key={project.title}
-            className="px-8 pt-8 pb-0 md:pt-12 md:px-10 lg:pt-16 lg:px-20 sticky"
-            style={{
-              top: `calc(64px + ${projectIndex * 40}px)`,
-            }}
-          >
+              <Card
+                key={project.title}
+                className="px-8 pt-8 pb-0 md:pt-12 md:px-10 lg:pt-16 lg:px-20 sticky"
+                style={{
+                  top: `calc(64px + ${projectIndex * 40}px)`,
+                }}
+              >
                 <div className="lg:grid lg:grid-cols-2 lg:gap-16">
                   <div className="lg:pb-16">
                     <div className="bg-gradient-to-r from-yellow-300 to-amber-400 inline-flex gap-2 font-bold uppercase tracking-widest text-sm text-transparent bg-clip-text">
@@ -230,15 +231,19 @@ export const ProjectsTabs = () => {
   return (
     <section id="project" className="pb-16 lg:py-24">
       <div className="container">
-        <SectionHeader
-          eyebrow="projects gallery"
-          title="My Work"
-          description="A showcase of my projects from bootcamp, university, and organizations. Use the tabs to navigate between categories."
-        />
+        <ScrollReveal>
+          <SectionHeader
+            eyebrow="projects gallery"
+            title="My Work"
+            description="A showcase of my projects from bootcamp, university, and organizations. Use the tabs to navigate between categories."
+          />
+        </ScrollReveal>
 
-        <div className="[perspective:1000px] relative flex flex-col max-w-5xl mx-auto w-full items-start justify-start my-10 md:my-20">
-          <Tabs tabs={tabs} />
-        </div>
+        <ScrollReveal delay={0.2}>
+          <div className="[perspective:1000px] relative flex flex-col max-w-5xl mx-auto w-full items-start justify-start my-10 md:my-20">
+            <Tabs tabs={tabs} />
+          </div>
+        </ScrollReveal>
       </div>
     </section>
   );

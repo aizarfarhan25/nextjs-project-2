@@ -170,6 +170,7 @@ export const OrganizationsSection = () => {
               </div>
             </Card>
           ))}
+          <div className="h-32 md:h-48" />
         </div>
       </div>
     </section>

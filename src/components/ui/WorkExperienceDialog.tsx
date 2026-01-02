@@ -1,42 +1,37 @@
 "use client";
 
-import { Dialog, DialogContent, DialogHeader, DialogTitle, DialogTrigger } from "@/components/ui/dialog"
-import { Button } from "@/components/ui/button"
+import { Dialog, DialogContent, DialogHeader, DialogTitle } from "@/components/ui/dialog"
 import { motion } from "framer-motion";
 import { useState } from "react";
 
-interface ProjectDetail {
+interface WorkExperienceDetail {
   overview: string;
-  features: string[];
-  role: {
-    title: string;
-    responsibilities: string[];
-  };
+  achievements: string[];
+  responsibilities: string[];
   technologies: string[];
 }
 
-interface ProjectDialogProps {
+interface WorkExperienceDialogProps {
   title: string;
-  projectDetail?: ProjectDetail;
+  company: string;
+  period: string;
+  experienceDetail?: WorkExperienceDetail;
+  open: boolean;
+  onOpenChange: (open: boolean) => void;
 }
 
-export function ProjectDialog({ title, projectDetail }: ProjectDialogProps) {
-  const [activeTab, setActiveTab] = useState<'overview' | 'features' | 'role' | 'tech'>('overview');
+export function WorkExperienceDialog({ title, company, period, experienceDetail, open, onOpenChange }: WorkExperienceDialogProps) {
+  const [activeTab, setActiveTab] = useState<'overview' | 'achievements' | 'responsibilities' | 'tech'>('overview');
   
   return (
-    <Dialog>
-      <DialogTrigger asChild>
-        <Button variant="outline" className="w-full min-w-[180px] relative overflow-hidden group">
-          <span className="relative z-10">Open Detail</span>
-          <span className="absolute inset-0 bg-gradient-to-r from-yellow-300 to-amber-400 opacity-0 group-hover:opacity-100 transition-opacity duration-300" style={{ mixBlendMode: 'overlay' }}></span>
-        </Button>
-      </DialogTrigger>
+    <Dialog open={open} onOpenChange={onOpenChange}>
       <DialogContent className="max-w-[800px] max-h-[80vh] overflow-y-auto bg-[#0a0a0a] border border-yellow-500/20">
         <DialogHeader>
           <DialogTitle className="text-3xl font-beni bg-gradient-to-r from-yellow-300 to-amber-400 text-transparent bg-clip-text">{title}</DialogTitle>
+          <p className="text-lg text-yellow-400/80 font-medium">{company} • {period}</p>
         </DialogHeader>
         
-        {projectDetail ? (
+        {experienceDetail ? (
           <>
             <div className="flex overflow-x-auto scrollbar-hide gap-2 mt-6 pb-2">
               <TabButton 
@@ -46,16 +41,16 @@ export function ProjectDialog({ title, projectDetail }: ProjectDialogProps) {
                 Overview
               </TabButton>
               <TabButton 
-                active={activeTab === 'features'} 
-                onClick={() => setActiveTab('features')}
+                active={activeTab === 'achievements'} 
+                onClick={() => setActiveTab('achievements')}
               >
-                Features
+                Achievements
               </TabButton>
               <TabButton 
-                active={activeTab === 'role'} 
-                onClick={() => setActiveTab('role')}
+                active={activeTab === 'responsibilities'} 
+                onClick={() => setActiveTab('responsibilities')}
               >
-                My Role
+                Responsibilities
               </TabButton>
               <TabButton 
                 active={activeTab === 'tech'} 
@@ -73,21 +68,21 @@ export function ProjectDialog({ title, projectDetail }: ProjectDialogProps) {
                   transition={{ duration: 0.5 }}
                   className="space-y-4"
                 >
-                  <h3 className="text-lg font-semibold text-yellow-400 mb-2">Project Overview</h3>
-                  <p className="text-gray-300 leading-relaxed py-8">{projectDetail.overview}</p>
+                  <h3 className="text-lg font-semibold text-yellow-400 mb-2">Role Overview</h3>
+                  <p className="text-gray-300 leading-relaxed py-8">{experienceDetail.overview}</p>
                 </motion.div>
               </TabContent>
               
-              <TabContent isActive={activeTab === 'features'}>
+              <TabContent isActive={activeTab === 'achievements'}>
                 <motion.div 
                   initial={{ opacity: 0, y: 20 }}
                   animate={{ opacity: 1, y: 0 }}
                   transition={{ duration: 0.5 }}
                   className="space-y-4"
                 >
-                  <h3 className="text-lg font-semibold text-yellow-400 mb-2">Key Features</h3>
-                  <ul className="grid grid-cols-1 md:grid-cols-2 gap-3 py-8">
-                    {projectDetail.features.map((feature, index) => (
+                  <h3 className="text-lg font-semibold text-yellow-400 mb-2">Key Achievements</h3>
+                  <ul className="grid grid-cols-1 gap-3 py-8">
+                    {experienceDetail.achievements.map((achievement, index) => (
                       <motion.li 
                         key={index} 
                         initial={{ opacity: 0, x: -20 }}
@@ -96,23 +91,23 @@ export function ProjectDialog({ title, projectDetail }: ProjectDialogProps) {
                         className="flex items-start gap-2 text-gray-300 bg-gray-800/50 p-3 rounded-lg border border-gray-700/50"
                       >
                         <span className="text-yellow-400 text-xl">•</span>
-                        <span>{feature}</span>
+                        <span>{achievement}</span>
                       </motion.li>
                     ))}
                   </ul>
                 </motion.div>
               </TabContent>
               
-              <TabContent isActive={activeTab === 'role'}>
+              <TabContent isActive={activeTab === 'responsibilities'}>
                 <motion.div 
                   initial={{ opacity: 0, y: 20 }}
                   animate={{ opacity: 1, y: 0 }}
                   transition={{ duration: 0.5 }}
                   className="space-y-4"
                 >
-                  <h3 className="text-lg font-semibold text-yellow-400 mb-2">{projectDetail.role.title}</h3>
+                  <h3 className="text-lg font-semibold text-yellow-400 mb-2">Key Responsibilities</h3>
                   <ul className="space-y-3 py-8">
-                    {projectDetail.role.responsibilities.map((responsibility, index) => (
+                    {experienceDetail.responsibilities.map((responsibility, index) => (
                       <motion.li 
                         key={index} 
                         initial={{ opacity: 0, x: -20 }}
@@ -137,7 +132,7 @@ export function ProjectDialog({ title, projectDetail }: ProjectDialogProps) {
                 >
                   <h3 className="text-lg font-semibold text-yellow-400 mb-2">Technologies Used</h3>
                   <div className="flex flex-wrap gap-2 py-8">
-                    {projectDetail.technologies.map((tech, index) => (
+                    {experienceDetail.technologies.map((tech, index) => (
                       <motion.span
                         key={index}
                         initial={{ opacity: 0, scale: 0.8 }}
@@ -159,7 +154,7 @@ export function ProjectDialog({ title, projectDetail }: ProjectDialogProps) {
             animate={{ opacity: 1 }}
             className="text-gray-300 text-center py-10"
           >
-            Project details are not available yet.
+            Work experience details are not available yet.
           </motion.p>
         )}
       </DialogContent>

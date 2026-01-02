@@ -26,6 +26,11 @@ export const Header = () => {
           icon: <IconCode className="h-4 w-4 text-neutral-500 dark:text-white block" />,
         },
         {
+          name: "Experience",
+          link: "#experience",
+          icon: <IconUser className="h-4 w-4 text-neutral-500 dark:text-white block" />,
+        },
+        {
           name: "About",
           link: "#about",
           icon: <IconUser className="h-4 w-4 text-neutral-500 dark:text-white block" />,

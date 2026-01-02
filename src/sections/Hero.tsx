@@ -14,6 +14,7 @@ import { GridBackground } from "@/components/ui/background-boxes";
 import { SpotlightNew } from "@/components/ui/spotlight-new";
 import { useEffect, useState } from "react";
 import { HoverBorderGradient } from "@/components/ui/hover-border-gradient";
+import { ScrollReveal } from "@/components/ui/ScrollReveal";
 
 export const HeroSection = () => {
   const [isMobile, setIsMobile] = useState(false);
@@ -81,38 +82,43 @@ export const HeroSection = () => {
           fill="white"
         /> */}
         <div className="flex flex-col items-center gap-1.5">
-          <Image
-            src={memojiImageFormal}
-            className="size-24 md:size-32 lg:size-44 rounded-full z-20"
-            alt="Picture of me"
-          />
-          <div className="relative">
-            <span className="absolute inset-0 bg-black/60 rounded-lg md:hidden"></span>
-            <h1 className="relative font-beni text-white/90 bg-clip-text text-center text-2xl md:text-5xl font-bold drop-shadow-lg flex items-center gap-2 pt-4 pb-4">
-              Andi Muh. Aizar Farhan
-            </h1>
-          </div>
-          <div className="bg-gray-900 border border-green-500 px-4 py-1.5 inline-flex items-center gap-4 rounded-lg z-10">
-            <div className="bg-green-500 size-2.5 rounded-full relative">
-              <div className="bg-green-500 absolute inset-0 animate-ping-large rounded-full"></div>
+          <ScrollReveal>
+            <div className="flex flex-col items-center gap-1.5">
+              <Image
+                src={memojiImageFormal}
+                className="size-24 md:size-32 lg:size-44 rounded-full z-20"
+                alt="Picture of me"
+              />
+              <div className="relative">
+                <span className="absolute inset-0 bg-black/60 rounded-lg md:hidden"></span>
+                <h1 className="relative font-beni text-white/90 bg-clip-text text-center text-2xl md:text-5xl font-bold drop-shadow-lg flex items-center gap-2 pt-4 pb-4">
+                  Andi Muh. Aizar Farhan
+                </h1>
+              </div>
+              <div className="bg-gray-900 border border-green-500 px-4 py-1.5 inline-flex items-center gap-4 rounded-lg z-10">
+                <div className="bg-green-500 size-2.5 rounded-full relative">
+                  <div className="bg-green-500 absolute inset-0 animate-ping-large rounded-full"></div>
+                </div>
+                <div className="text-xs md:text-sm lg:text-sm font-medium">
+                  Available for new jobs and projects
+                </div>
+              </div>
             </div>
-            <div className="text-xs md:text-sm lg:text-sm font-medium">
-              Available for new jobs and projects
-            </div>
-          </div>
+          </ScrollReveal>
         </div>
         <div className="max-w-6xl mx-auto">
-          <div className="relative mt-2">
-            <span className="absolute inset-0 bg-black/70 rounded-lg md:hidden"></span>
-            <div className="font-bold text-2xl font-beni md:text-5xl text-wrap text-center tracking-wide h-[80px] md:h-[120px] flex items-center justify-center relative">
-              <FlipWords
-                words={["Quality Assurance Engineer", "Front-End Developer"]}
-                duration={2000}
-                className="text-white"
-              />
+          <ScrollReveal delay={0.2}>
+            <div className="relative mt-2">
+              <span className="absolute inset-0 bg-black/70 rounded-lg md:hidden"></span>
+              <div className="font-bold text-2xl font-beni md:text-5xl text-wrap text-center tracking-wide h-[80px] md:h-[120px] flex items-center justify-center relative">
+                <FlipWords
+                  words={["Quality Assurance Engineer", "Front-End Developer"]}
+                  duration={2000}
+                  className="text-white"
+                />
+              </div>
             </div>
-          </div>
-          {/* <p className="mt-4 text-center text-white/60 md:text-lg">
+            {/* <p className="mt-4 text-center text-white/60 md:text-lg">
             Motivated QA engineer with experience designing and executing tests
             to help improve software quality. Currently serving as a
             <span className="p-1.5 text-sky-400 font-bold">
@@ -120,54 +126,57 @@ export const HeroSection = () => {
             </span>
             through June 2025
           </p> */}
-          <div className="relative mt-4">
-            <span className="absolute inset-0 bg-black/70 rounded-lg md:hidden"></span>
-            <p className="relative text-center text-white/60 md:text-lg z-auto">
-              Motivated Quality Assurance Engineer with experience designing and
-              executing tests to help improve software quality.
-              {/* Currently serving as a
-              <span className="p-1.5 text-sky-400 font-bold">
-                Software Quality Assurance Engineer at Synapsis.id
+            <div className="relative mt-4">
+              <span className="absolute inset-0 bg-black/70 rounded-lg md:hidden"></span>
+              <p className="relative text-center text-white/60 md:text-lg z-auto">
+                Motivated Quality Assurance Engineer with experience designing and
+                executing tests to help improve software quality.
+                {/* Currently serving as a
+              Software Quality Assurance Engineer at Synapsis.id
               </span> */}
-            </p>
-          </div>
+              </p>
+            </div>
+          </ScrollReveal>
         </div>
-        <div className="flex flex-col md:flex-row justify-center items-center mt-8 gap-4">
-          <div className="flex justify-center text-center">
-            <a href="#project" className="z-10">
-              <HoverBorderGradient
-                containerClassName="rounded-xl transition-transform duration-200 hover:scale-105"
-                as="button"
-                className="dark:bg-black bg-white text-black dark:text-white flex items-center space-x-2"
-              >
-                <span>Explore My Work</span>
-                <ArrowDown className="size-4" />
-              </HoverBorderGradient>
+        <ScrollReveal delay={0.4}>
+          <div className="flex flex-col md:flex-row justify-center items-center mt-8 gap-4">
+            <div className="flex justify-center text-center">
+              <a href="#project" className="z-10">
+                <HoverBorderGradient
+                  containerClassName="rounded-xl transition-transform duration-200 hover:scale-105"
+                  as="button"
+                  className="dark:bg-black bg-white text-black dark:text-white flex items-center space-x-2"
+                >
+                  <span>Explore My Work</span>
+                  <ArrowDown className="size-4" />
+                </HoverBorderGradient>
+              </a>
+            </div>
+            <a href="#contact" className="z-10">
+              <button className="inline-flex items-center gap-2 border border-white bg-white text-gray-900 px-6 h-12 rounded-xl transition-transform duration-200 hover:scale-105 hover:shadow-lg">
+                <span className="font-semibold">Let&apos;s Connect</span>
+                <span>👋🏽</span>
+              </button>
+            </a>
+            <a
+              href="/CV - Andi Muh. Aizar Farhan.pdf"
+              target="_blank"
+              rel="noopener noreferrer"
+              className="z-10"
+            >
+              <button className="inline-flex items-center gap-2 border border-white/15 bg-amber-400 text-gray-900 px-6 h-12 rounded-xl transition-transform duration-200 hover:scale-105 hover:shadow-lg">
+                <span className="font-semibold">My Resume</span>
+                <Image
+                  src={download}
+                  alt="Download"
+                  className="size-4"
+                  width={16}
+                  height={16}
+                />
+              </button>
             </a>
           </div>
-          <a href="#contact" className="z-10">
-            <button className="inline-flex items-center gap-2 border border-white bg-white text-gray-900 px-6 h-12 rounded-xl transition-transform duration-200 hover:scale-105 hover:shadow-lg">
-              <span className="font-semibold">Let&apos;s Connect</span>
-              <span>👋🏽</span>
-            </button>
-          </a>
-          <a
-            href="/CV - Andi Muh. Aizar Farhan.pdf"
-            download="CV - Andi Muh. Aizar Farhan.pdf"
-            className="z-10"
-          >
-            <button className="inline-flex items-center gap-2 border border-white/15 bg-amber-400 text-gray-900 px-6 h-12 rounded-xl transition-transform duration-200 hover:scale-105 hover:shadow-lg">
-              <span className="font-semibold">My Resume</span>
-              <Image
-                src={download}
-                alt="Download"
-                className="size-4"
-                width={16}
-                height={16}
-              />
-            </button>
-          </a>
-        </div>
+        </ScrollReveal>
       </div>
       {/* <div className="flex justify-center">
         <FlipWords
