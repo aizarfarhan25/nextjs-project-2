@@ -7,6 +7,7 @@ import Link from "next/link";
 import { ArrowUpRight } from "lucide-react";
 import { WorkExperienceDialog } from "@/components/ui/WorkExperienceDialog";
 import { useState } from "react";
+import { ScrollReveal } from "@/components/ui/ScrollReveal";
 
 // Company logos mapping
 const companyLogos: { [key: string]: string } = {
@@ -189,71 +190,75 @@ export const WorkExperienceSection = () => {
   return (
     <section id="experience" className="pb-16 lg:py-24">
       <div className="container">
-        <SectionHeader
-          eyebrow="professional journey"
-          title="Work Experience"
-          description="Here's an overview of my professional experience and the skills I've developed throughout my career."
-        />
-        <div className="flex flex-col mt-10 md:mt-20 gap-4 md:gap-6">
-          {workExperiences.map((experience, experienceIndex) => (
-            <Card
-              key={experience.company}
-              className="px-5 pt-6 pb-4 md:pt-8 md:px-10 md:pb-6 lg:pt-10 lg:px-16 sticky"
-              style={{
-                top: `calc(64px + ${experienceIndex * 40}px)`,
-              }}
-            >
-              <div className="flex flex-col md:flex-row gap-2 md:gap-8">
-                <div className="flex-1">
-                  <div className="bg-gradient-to-r from-yellow-300 to-amber-400 inline-flex gap-2 font-bold uppercase tracking-widest text-xs md:text-sm text-transparent bg-clip-text">
-                    <span>{experience.company}</span>
-                    <span>&bull;</span>
-                    <span>{experience.period}</span>
+        <ScrollReveal>
+          <SectionHeader
+            eyebrow="professional journey"
+            title="Work Experience"
+            description="Here's an overview of my professional experience and the skills I've developed throughout my career."
+          />
+        </ScrollReveal>
+        <ScrollReveal delay={0.2}>
+          <div className="flex flex-col mt-10 md:mt-20 gap-4 md:gap-6">
+            {workExperiences.map((experience, experienceIndex) => (
+              <Card
+                key={experience.company}
+                className="px-5 pt-6 pb-4 md:pt-8 md:px-10 md:pb-6 lg:pt-10 lg:px-16 sticky"
+                style={{
+                  top: `calc(64px + ${experienceIndex * 40}px)`,
+                }}
+              >
+                <div className="flex flex-col md:flex-row gap-2 md:gap-8">
+                  <div className="flex-1">
+                    <div className="bg-gradient-to-r from-yellow-300 to-amber-400 inline-flex gap-2 font-bold uppercase tracking-widest text-xs md:text-sm text-transparent bg-clip-text">
+                      <span>{experience.company}</span>
+                      <span>&bull;</span>
+                      <span>{experience.period}</span>
+                    </div>
+                    <h3 className="font-beni font-semibold text-xl mt-1 md:mt-3 md:text-3xl lg:text-4xl">
+                      {experience.position}
+                    </h3>
+                    <hr className="border-t-2 border-white/5 mt-2 md:mt-4" />
+                    <div className="mt-2 md:mt-4 text-white/60">
+                      <p className="mb-2">
+                        <span className="font-semibold text-white">
+                          Location:
+                        </span>{" "}
+                        {experience.location}
+                      </p>
+                      <p>{experience.description}</p>
+                    </div>
+                    <div className="mt-4 md:mt-6">
+                      {experience.experienceDetail && (
+                        <button
+                          onClick={() => handleViewDetails(experience)}
+                          className="bg-white text-gray-950 h-10 w-full min-w-[180px] px-5 rounded-xl font-semibold inline-flex items-center justify-center gap-2"
+                        >
+                          <span>View Details</span>
+                          <ArrowUpRight className="size-4" />
+                        </button>
+                      )}
+                    </div>
                   </div>
-                  <h3 className="font-beni font-semibold text-xl mt-1 md:mt-3 md:text-3xl lg:text-4xl">
-                    {experience.position}
-                  </h3>
-                  <hr className="border-t-2 border-white/5 mt-2 md:mt-4" />
-                  <div className="mt-2 md:mt-4 text-white/60">
-                    <p className="mb-2">
-                      <span className="font-semibold text-white">
-                        Location:
-                      </span>{" "}
-                      {experience.location}
-                    </p>
-                    <p>{experience.description}</p>
-                  </div>
-                  <div className="mt-4 md:mt-6">
-                    {experience.experienceDetail && (
-                      <button
-                        onClick={() => handleViewDetails(experience)}
-                        className="bg-white text-gray-950 h-10 w-full min-w-[180px] px-5 rounded-xl font-semibold inline-flex items-center justify-center gap-2"
-                      >
-                        <span>View Details</span>
-                        <ArrowUpRight className="size-4" />
-                      </button>
-                    )}
+                  <div className="flex justify-center md:justify-end items-center md:items-start mt-3 md:mt-0">
+                    <div className="w-48 h-20 md:w-64 md:h-[120px] flex items-center justify-center bg-white rounded-lg p-3 md:p-6 shadow-sm">
+                      {companyLogos[experience.company] && (
+                        <div className="flex items-center justify-center w-full h-full">
+                          <Image
+                            src={companyLogos[experience.company]}
+                            alt={`${experience.company} logo`}
+                            width={240}
+                            height={120}
+                            className="object-contain max-w-full max-h-full"
+                          />
+                        </div>
+                      )}
+                    </div>
                   </div>
                 </div>
-                <div className="flex justify-center md:justify-end items-center md:items-start mt-3 md:mt-0">
-                  <div className="w-48 h-20 md:w-64 md:h-[120px] flex items-center justify-center bg-white rounded-lg p-3 md:p-6 shadow-sm">
-                    {companyLogos[experience.company] && (
-                      <div className="flex items-center justify-center w-full h-full">
-                        <Image
-                          src={companyLogos[experience.company]}
-                          alt={`${experience.company} logo`}
-                          width={240}
-                          height={120}
-                          className="object-contain max-w-full max-h-full"
-                        />
-                      </div>
-                    )}
-                  </div>
-                </div>
-              </div>
-            </Card>
-          ))}
-        </div>
+              </Card>
+            ))}
+          </div>
+        </ScrollReveal>
       </div>
 
       {selectedExperience && (
