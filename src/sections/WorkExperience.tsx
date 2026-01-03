@@ -137,14 +137,14 @@ export const workExperiences: WorkExperience[] = [
   },
   {
     company: "Qoala",
-    position: "Junior SDET 1",
+    position: "Junior Software Development Engineer In Test (SDET 1)",
     period: "Oct 2024 - Present",
     location: "Jakarta, Indonesia",
     description: "Full Time",
     link: "https://qoala.com/",
     experienceDetail: {
       overview:
-        "As a Junior SDET 1 at Qoala, I focus on ensuring product quality through a mix of manual and automated testing. I actively contribute to the Playwright automation framework while executing rigorous manual tests for complex insurance business flows.",
+        "As a Junior Software Development Engineer In Test (SDET 1) at Qoala, I focus on ensuring product quality through a mix of manual and automated testing. I actively contribute to the Playwright automation framework while executing rigorous manual tests for complex insurance business flows.",
       achievements: [
         "Contributing to the expansion of the Playwright automation test suite",
         "Executing daily regression tests to ensure system stability",
@@ -163,6 +163,7 @@ export const workExperiences: WorkExperience[] = [
         "Playwright",
         "TypeScript",
         "Postman",
+        "DBeaver",
         "SQL",
         "Git",
         "JIRA",
