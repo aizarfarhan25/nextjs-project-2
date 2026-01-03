@@ -22,6 +22,18 @@ interface ProjectDetail {
     responsibilities: string[];
   };
   technologies: string[];
+  codeSnippets?: {
+    title: string;
+    description: string;
+    language: string;
+    code: string;
+  }[];
+  testArtifacts?: {
+    title: string;
+    description: string;
+    type: "test-case" | "bug-report" | "test-plan";
+    content: string;
+  }[];
 }
 
 export interface Project {
@@ -47,24 +59,32 @@ export const portfolioProjects: Project[] = [
     link: "https://easytrip-ten.vercel.app/",
     image: easytrip,
     projectDetail: {
-      overview: "EasyTrip is a frontend web project developed as part of the RevoU Bootcamp curriculum. The website serves as a clean and user-friendly guide for travelers interested in exploring Indonesia. Its primary goal is to provide essential information in a visually appealing format, focusing on two key aspects of travel: visiting iconic cities and discovering their most popular local foods.",
+      overview:
+        "EasyTrip is a frontend web project developed as part of the RevoU Bootcamp curriculum. The website serves as a clean and user-friendly guide for travelers interested in exploring Indonesia. Its primary goal is to provide essential information in a visually appealing format, focusing on two key aspects of travel: visiting iconic cities and discovering their most popular local foods.",
       features: [
         "Fully Responsive Design: Built with a mobile-first approach, ensuring seamless experience across all devices",
         "Engaging Homepage: Captivating hero section showcasing Indonesia's natural beauty",
         "City Exploration Page: Curated list of notable Indonesian cities in clean card layout",
         "Detailed City & Culinary Guides: Dedicated pages with city introductions and must-try foods",
-        "Intuitive Navigation: Simple and clean navigation bar for easy access to all sections"
+        "Intuitive Navigation: Simple and clean navigation bar for easy access to all sections",
       ],
       role: {
         title: "My Role & Responsibilities",
         responsibilities: [
           "Web Design (UI): Designed the visual layout, color scheme, and typography",
           "Frontend Development: Wrote semantic HTML5 and implemented CSS3 styling",
-          "Content Implementation: Structured and presented information about Indonesian cities and cuisine"
-        ]
+          "Content Implementation: Structured and presented information about Indonesian cities and cuisine",
+        ],
       },
-      technologies: ["HTML5", "CSS3", "Flexbox", "Grid", "Media Queries", "Vercel"]
-    }
+      technologies: [
+        "HTML5",
+        "CSS3",
+        "Flexbox",
+        "Grid",
+        "Media Queries",
+        "Vercel",
+      ],
+    },
   },
   {
     company: "RevoU (Bootcamp Project)",
@@ -78,13 +98,14 @@ export const portfolioProjects: Project[] = [
     link: "https://niuhome.site/",
     image: niuhome,
     projectDetail: {
-      overview: "NiuHome is a dynamic frontend project created as part of the RevoU Bootcamp. It functions as a demonstration of a clean, modern, and user-friendly real-estate website. The platform is designed for prospective buyers, offering a curated showcase of properties tailored to various needs and lifestyles. By combining a minimalist design with intuitive functionality, NiuHome aims to provide an elegant and efficient Browse experience, making it easier for users to discover and explore their future dream homes.",
+      overview:
+        "NiuHome is a dynamic frontend project created as part of the RevoU Bootcamp. It functions as a demonstration of a clean, modern, and user-friendly real-estate website. The platform is designed for prospective buyers, offering a curated showcase of properties tailored to various needs and lifestyles. By combining a minimalist design with intuitive functionality, NiuHome aims to provide an elegant and efficient Browse experience, making it easier for users to discover and explore their future dream homes.",
       features: [
         "Modern & Responsive UI: Built with Tailwind CSS, delivering flawless experience across all devices",
         "Dynamic Property Showcase: Well-organized grid of property listings with crucial information",
         "Interactive Testimonial Slider: JavaScript-powered testimonial section for smooth customer review browsing",
         "Clear Call-to-Actions: Strategically placed buttons for intuitive user journey",
-        "Clean & Professional Aesthetics: Sophisticated color palette and modern typography for high-end feel"
+        "Clean & Professional Aesthetics: Sophisticated color palette and modern typography for high-end feel",
       ],
       role: {
         title: "My Role & Responsibilities",
@@ -92,11 +113,19 @@ export const portfolioProjects: Project[] = [
           "UI Development: Translated design concept into functional website using HTML and Tailwind CSS",
           "Component-Based Structure: Built reusable UI components for consistency and maintainability",
           "Frontend Interactivity: Implemented dynamic features with JavaScript",
-          "Responsive Implementation: Used Tailwind CSS utility classes for perfect adaptation to all screens"
-        ]
+          "Responsive Implementation: Used Tailwind CSS utility classes for perfect adaptation to all screens",
+        ],
       },
-      technologies: ["HTML5", "Tailwind CSS", "JavaScript (ES6)", "Flexbox", "Grid", "DOM Manipulation", "Netlify"]
-    }
+      technologies: [
+        "HTML5",
+        "Tailwind CSS",
+        "JavaScript (ES6)",
+        "Flexbox",
+        "Grid",
+        "DOM Manipulation",
+        "Netlify",
+      ],
+    },
   },
   {
     company: "RevoU (Bootcamp Project)",
@@ -110,13 +139,14 @@ export const portfolioProjects: Project[] = [
     link: "https://comfie.site/",
     image: comfie,
     projectDetail: {
-      overview: "Comfie is a frontend website developed as a RevoU Bootcamp project. It serves as the online portfolio for a high-end interior design studio, presented as a specialized brand under the 'NiuHome' umbrella. The project's core purpose is to attract and inform potential clients by showcasing a strong brand identity, a portfolio of work, and a clear design philosophy. The website employs a clean, modern aesthetic with a distinctive color palette and elegant typography to create a sense of style and comfort, directly reflecting the services offered.",
+      overview:
+        "Comfie is a frontend website developed as a RevoU Bootcamp project. It serves as the online portfolio for a high-end interior design studio, presented as a specialized brand under the 'NiuHome' umbrella. The project's core purpose is to attract and inform potential clients by showcasing a strong brand identity, a portfolio of work, and a clear design philosophy. The website employs a clean, modern aesthetic with a distinctive color palette and elegant typography to create a sense of style and comfort, directly reflecting the services offered.",
       features: [
         "Striking Visual Layout: Sophisticated, asymmetrical layout in hero section and masonry-style project gallery",
         "Masonry Project Gallery: Visually impressive portfolio display with perfect-fit image layout",
         "Brand Storytelling Sections: Clear sections for brand values and modern minimalist approach",
         "Fully Responsive Design: Meticulously crafted layouts that adapt perfectly to all devices",
-        "Integrated Contact Form: Seamless contact section for potential client inquiries"
+        "Integrated Contact Form: Seamless contact section for potential client inquiries",
       ],
       role: {
         title: "My Role & Responsibilities",
@@ -124,11 +154,19 @@ export const portfolioProjects: Project[] = [
           "UI Development: Translated visual concept and brand identity using HTML and Tailwind CSS",
           "Complex Layout Implementation: Built advanced responsive layouts including masonry grid",
           "Styling and Theming: Applied distinct color scheme and typography for professional interface",
-          "Frontend Interactivity: Implemented JavaScript for mobile navigation and interactive elements"
-        ]
+          "Frontend Interactivity: Implemented JavaScript for mobile navigation and interactive elements",
+        ],
       },
-      technologies: ["HTML5", "Tailwind CSS", "JavaScript (ES6)", "Grid", "Masonry Layout", "DOM Manipulation", "Netlify"]
-    }
+      technologies: [
+        "HTML5",
+        "Tailwind CSS",
+        "JavaScript (ES6)",
+        "Grid",
+        "Masonry Layout",
+        "DOM Manipulation",
+        "Netlify",
+      ],
+    },
   },
   // {
   //   company: "RevoU (Bootcamp Project)",
@@ -154,7 +192,8 @@ export const portfolioProjects: Project[] = [
     link: "https://group-project-dlhpe1m6f-rafli-triatmas-projects.vercel.app/",
     image: klikmart,
     projectDetail: {
-      overview: "KlikMart is a responsive e-commerce website built as part of the REVOU Bootcamp 2025. It's a comprehensive online shopping platform that provides users with a seamless shopping experience from product discovery to checkout and order tracking. The project focuses on creating a modern, user-friendly interface with all essential e-commerce functionalities.",
+      overview:
+        "KlikMart is a responsive e-commerce website built as part of the REVOU Bootcamp 2025. It's a comprehensive online shopping platform that provides users with a seamless shopping experience from product discovery to checkout and order tracking. The project focuses on creating a modern, user-friendly interface with all essential e-commerce functionalities.",
       features: [
         "Product Catalog: Responsive product grid with filtering, sorting, and pagination",
         "Product Categories: Browse products by categories with intuitive navigation",
@@ -172,7 +211,7 @@ export const portfolioProjects: Project[] = [
         "Order Confirmation: Detailed order summary after successful purchase",
         "Responsive Design: Optimized for all device sizes (mobile, tablet, desktop)",
         "Promotional Elements: Support for discounts, sales tags, and promotional banners",
-        "Live Chat Integration: Tawk.to chat integration for customer support"
+        "Live Chat Integration: Tawk.to chat integration for customer support",
       ],
       role: {
         title: "My Role & Responsibilities",
@@ -194,14 +233,25 @@ export const portfolioProjects: Project[] = [
           // "Wrote unit tests for critical components and hooks",
           "Optimized performance with lazy loading and pagination",
           "Implemented skeleton loaders for improved perceived performance",
-          "Ensured cross-browser compatibility and responsive design"
-        ]
+          "Ensured cross-browser compatibility and responsive design",
+        ],
       },
       technologies: [
-        "Next.js", "React", "TypeScript", "Tailwind CSS", "CSS Modules", "React Context API", "SWR", 
-        "Axios", "REST API", "ESLint", "Prettier", "Git", "Vercel"
-      ]
-    }
+        "Next.js",
+        "React",
+        "TypeScript",
+        "Tailwind CSS",
+        "CSS Modules",
+        "React Context API",
+        "SWR",
+        "Axios",
+        "REST API",
+        "ESLint",
+        "Prettier",
+        "Git",
+        "Vercel",
+      ],
+    },
   },
   {
     company: "RevoU (Bootcamp Project)",
@@ -215,7 +265,8 @@ export const portfolioProjects: Project[] = [
     link: "https://github.com/aizarfarhan25/revou-bank",
     image: revoubank,
     projectDetail: {
-      overview: "RevoU Bank is a comprehensive banking system application developed as part of the RevoU Full-Stack Software Engineering program. This application provides a secure and efficient platform for managing banking operations including user authentication, account management, and various transaction types (deposits, withdrawals, and transfers).",
+      overview:
+        "RevoU Bank is a comprehensive banking system application developed as part of the RevoU Full-Stack Software Engineering program. This application provides a secure and efficient platform for managing banking operations including user authentication, account management, and various transaction types (deposits, withdrawals, and transfers).",
       features: [
         "User Management: Secure user registration and authentication",
         "Password hashing with bcrypt",
@@ -230,7 +281,7 @@ export const portfolioProjects: Project[] = [
         "Security: Secure password storage with bcrypt",
         "API authentication middleware",
         "Request ID tracking for all API requests",
-        "Database transaction integrity"
+        "Database transaction integrity",
       ],
       role: {
         title: "My Role & Responsibilities",
@@ -242,11 +293,127 @@ export const portfolioProjects: Project[] = [
           "Setting up transaction processing with proper error handling",
           "Ensuring data integrity and security throughout the application",
           "Implementing unit and integration tests",
-          "Documenting the application architecture and API endpoints"
-        ]
+          "Documenting the application architecture and API endpoints",
+        ],
       },
-      technologies: ["Python 3.11+", "Flask", "SQLAlchemy", "PostgreSQL", "Pydantic", "Bcrypt", "JWT", "Pytest", "Taskipy"]
-    }
+      technologies: [
+        "Python 3.11+",
+        "Flask",
+        "SQLAlchemy",
+        "PostgreSQL",
+        "Pydantic",
+        "Bcrypt",
+        "JWT",
+        "Pytest",
+        "Taskipy",
+      ],
+      codeSnippets: [
+        {
+          title: "Secure Account Transfer Transaction",
+          description:
+            "Atomic transaction handling for fund transfers ensuring data integrity and race condition prevention.",
+          language: "python",
+          code: `@db.transaction()
+def transfer_funds(sender_id: int, receiver_id: int, amount: Decimal) -> Transfer:
+    sender = AccountRepository.get_by_id_for_update(sender_id)
+    receiver = AccountRepository.get_by_id_for_update(receiver_id)
+
+    if sender.balance < amount:
+        raise InsufficientFundsError("Sender has insufficient balance")
+
+    sender.balance -= amount
+    receiver.balance += amount
+    
+    transfer_record = TransferRepository.create(
+        sender_id=sender_id,
+        receiver_id=receiver_id, 
+        amount=amount,
+        status=TransactionStatus.COMPLETED
+    )
+    
+    return transfer_record`,
+        },
+        {
+          title: "JWT Authentication Middleware",
+          description:
+            "Custom decorator for protecting routes and validating user sessions.",
+          language: "python",
+          code: `def login_required(f):
+    @wraps(f)
+    def decorated(*args, **kwargs):
+        token = None
+        if 'Authorization' in request.headers:
+            token = request.headers['Authorization'].split(" ")[1]
+        
+        if not token:
+            return jsonify({'message': 'Token is missing!'}), 401
+            
+        try:
+            data = jwt.decode(token, current_app.config['SECRET_KEY'], algorithms=["HS256"])
+            current_user = User.query.filter_by(public_id=data['public_id']).first()
+        except:
+             return jsonify({'message': 'Token is invalid!'}), 401
+
+        return f(current_user, *args, **kwargs)
+    return decorated`,
+        },
+      ],
+      testArtifacts: [
+        {
+          title: "Test Strategy: Transaction Concurrency",
+          description:
+            "Comprehensive strategy for validating system behavior under high load and concurrent requests.",
+          type: "test-plan",
+          content: `## 1. Objective
+To ensure the banking ledger maintains 100% data integrity when processing simultaneous transactions from multiple sources.
+
+## 2. In Scope
+- **Concurrent Fund Transfers**: Simulating 50+ users transferring funds to the same account simultaneously.
+- **Race Condition Handling**: Verifying database locking mechanisms (SELECT FOR UPDATE).
+- **Deadlock Prevention**: Ensuring the system gracefully handles circular dependencies (A->B, B->A).
+
+## 3. Test Tools & Environment
+- **Load Generation**: Apache JMeter (50 threads, ramp-up 10s).
+- **Monitoring**: Grafana dashboard watching DB lock waits and transaction rollbacks.
+- **Environment**: Staging Kubernetes Cluster (3 Pods).
+
+## 4. Execution Strategy
+We will execute the "Circular Transfer Pattern" script.
+1. Create 50 test accounts with $1000 balance each.
+2. Trigger random transfers between all accounts for 5 minutes.
+3. **Success Criteria**: Sum of all balances must be exactly $50,000 at the end. Any deviation indicates a leak.`,
+        },
+        {
+          title: "Critical Bug: Floating Point Precision Loss",
+          description:
+            "High-severity issue discovered during boundary value analysis of currency calculations.",
+          type: "bug-report",
+          content: `### 🔴 Incident Report: PREC-2024-001
+
+**Status**: Resolved
+**Severity**: Critical (P0)
+**Component**: Core Ledger Service
+
+### 🐛 Description
+We observed a "penny leaking" issue where the sum of balances was decreasing by fractions of a cent after processing over 1,000 micro-transactions. This is likely due to standard floating-point binary representation errors.
+
+### 🔍 Root Cause Analysis
+The \`amount\` field in the \`Transaction\` model was defined as \`Float\`. Python's \`float\` uses IEEE 754 double precision, which cannot accurately represent decimal fractions like 0.1 or 0.01.
+
+### 🛠️ Developer's Resolution
+**Why this happened**:
+Using \`Float\` for financial data is a common pitfall. While performant, it sacrifices precision for range. In a banking context, $0.0000001 errors accumulate into significant discrepancies over time.
+
+**The Fix**:
+1. **Database Migration**: Altered PostgreSQL columns from \`DOUBLE PRECISION\` to \`DECIMAL(18, 4)\` to store exact values.
+2. **Backend Update**: Refactored Pydantic models to strictly use Python's \`Decimal\` class, ensuring arithmetic operations maintain fixed precision.
+3. **Validation**: Added a regression test suite \`test_currency_integrity.py\` simulating 1 million micro-transfers.
+
+**Outcome**:
+Zero precision loss related incidents since deployment. System now passes all financial compliance verification checks.`,
+        },
+      ],
+    },
   },
   // {
   //   company: "Quantum Dynamics",

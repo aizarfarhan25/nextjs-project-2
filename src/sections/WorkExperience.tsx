@@ -37,7 +37,7 @@ interface WorkExperience {
 export const workExperiences: WorkExperience[] = [
   {
     company: "Kalbe Farma",
-    position: "Quality Assurance Intern",
+    position: "Quality Assurance",
     period: "Feb 2024 - Feb 2025",
     location: "Jakarta, Indonesia",
     description: "Internship",
@@ -71,7 +71,7 @@ export const workExperiences: WorkExperience[] = [
   },
   {
     company: "Synapsis.id",
-    position: "Quality Assurance Engineer Intern",
+    position: "Quality Assurance Engineer",
     period: "Feb 2025 - June 2025",
     location: "Jakarta, Indonesia",
     description: "Internship",
@@ -137,27 +137,27 @@ export const workExperiences: WorkExperience[] = [
   },
   {
     company: "Qoala",
-    position: "Software Development Engineer In Test",
-    period: "Oct 2025 - Present",
+    position: "Junior SDET 1",
+    period: "Oct 2024 - Present",
     location: "Jakarta, Indonesia",
     description: "Full Time",
     link: "https://qoala.com/",
     experienceDetail: {
       overview:
-        "As a Software Development Engineer In Test at Qoala, I managed both manual and automated testing to ensure high product quality and a smooth user experience. I built a scalable automation framework from scratch using Playwright while performing rigorous manual testing for complex business flows.",
+        "As a Junior SDET 1 at Qoala, I focus on ensuring product quality through a mix of manual and automated testing. I actively contribute to the Playwright automation framework while executing rigorous manual tests for complex insurance business flows.",
       achievements: [
-        "Built a scalable automation framework using Playwright",
-        "Execute E2E tests for over 100+ scenarios",
-        "Implemented comprehensive E2E tests covering full business cycles like Quotation, Approvals, and Claims for over 7 Bank",
-        "Improve test efficiency by 80% through parallel execution and optimized test scripts",
-        "Designed a modular Page Object Model (POM) architecture",
-        "Conducted manual testing covering positive, negative, and edge cases",
+        "Contributing to the expansion of the Playwright automation test suite",
+        "Executing daily regression tests to ensure system stability",
+        "Validating critical business flows like Quotation and Claims across multiple partners",
+        "Helping reduce manual testing effort by automating repetitive test scenarios",
+        "Collaborating with the team to maintain clean code using Page Object Model (POM)",
+        "Conducting thorough manual testing for new features and edge cases",
       ],
       responsibilities: [
-        "Developed and maintained automated test scripts for critical features including Authentication and Workflow Approvals.",
-        "Performed detailed API testing using Postman to verify internal and external system integrations.",
-        "Collaborated with developers on bug reproduction, root cause analysis, and sprint planning.",
-        "Executed ad-hoc production testing and managed test data using SQL for specific scenarios.",
+        "Developing and maintaining automated test scripts for critical features.",
+        "Performing detailed API testing using Postman to verify internal system integrations.",
+        "Collaborating with developers on bug reproduction and verifying fixes.",
+        "Participating in sprint planning and daily standups to align on testing priorities.",
       ],
       technologies: [
         "Playwright",

@@ -58,7 +58,11 @@ export const ProjectsTabs = () => {
                       ))}
                     </ul>
                     <div className="flex flex-col md:flex-row gap-4 mt-6">
-                      <a href={project.link} target="_blank" className="flex-1 md:flex-initial">
+                      <a
+                        href={project.link}
+                        target="_blank"
+                        className="flex-1 md:flex-initial"
+                      >
                         <button className="bg-white text-gray-950 h-10 w-full min-w-[180px] px-5 rounded-xl font-semibold inline-flex items-center justify-center gap-2">
                           <span>Visit Live Site</span>
                           <ArrowUpRight className="size-4" />
@@ -68,6 +72,9 @@ export const ProjectsTabs = () => {
                         <ProjectDialog
                           title={project.title}
                           projectDetail={project.projectDetail}
+                          company={project.company}
+                          year={project.year}
+                          link={project.link}
                         />
                       </div>
                     </div>
@@ -128,7 +135,11 @@ export const ProjectsTabs = () => {
                       ))}
                     </ul>
                     <div className="flex flex-col md:flex-row gap-4 mt-6">
-                      <a href={project.link} target="_blank" className="flex-1 md:flex-initial">
+                      <a
+                        href={project.link}
+                        target="_blank"
+                        className="flex-1 md:flex-initial"
+                      >
                         <button className="bg-white text-gray-950 h-10 w-full min-w-[180px] px-5 rounded-xl font-semibold inline-flex items-center justify-center gap-2">
                           <span>View Design</span>
                           <ArrowUpRight className="size-4" />
@@ -138,6 +149,10 @@ export const ProjectsTabs = () => {
                         <ProjectDialog
                           title={project.title}
                           projectDetail={project.projectDetail}
+                          company={project.company}
+                          year={project.year}
+                          link={project.link}
+                          ctaLabel="View Design"
                         />
                       </div>
                     </div>
@@ -198,7 +213,11 @@ export const ProjectsTabs = () => {
                       ))}
                     </ul>
                     <div className="flex flex-col md:flex-row gap-4 mt-6">
-                      <a href={project.link} target="_blank" className="flex-1 md:flex-initial">
+                      <a
+                        href={project.link}
+                        target="_blank"
+                        className="flex-1 md:flex-initial"
+                      >
                         <button className="bg-white text-gray-950 h-10 w-full min-w-[180px] px-5 rounded-xl font-semibold inline-flex items-center justify-center gap-2">
                           <span>Documentation</span>
                           <ArrowUpRight className="size-4" />
@@ -208,6 +227,10 @@ export const ProjectsTabs = () => {
                         <ProjectDialog
                           title={project.title}
                           projectDetail={project.projectDetail}
+                          company={project.company}
+                          year={project.year}
+                          link={project.link}
+                          ctaLabel="Documentation"
                         />
                       </div>
                     </div>
