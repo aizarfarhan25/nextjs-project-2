@@ -307,57 +307,57 @@ export const portfolioProjects: Project[] = [
         "Pytest",
         "Taskipy",
       ],
-      codeSnippets: [
-        {
-          title: "Secure Account Transfer Transaction",
-          description:
-            "Atomic transaction handling for fund transfers ensuring data integrity and race condition prevention.",
-          language: "python",
-          code: `@db.transaction()
-def transfer_funds(sender_id: int, receiver_id: int, amount: Decimal) -> Transfer:
-    sender = AccountRepository.get_by_id_for_update(sender_id)
-    receiver = AccountRepository.get_by_id_for_update(receiver_id)
+//       codeSnippets: [
+//         {
+//           title: "Secure Account Transfer Transaction",
+//           description:
+//             "Atomic transaction handling for fund transfers ensuring data integrity and race condition prevention.",
+//           language: "python",
+//           code: `@db.transaction()
+// def transfer_funds(sender_id: int, receiver_id: int, amount: Decimal) -> Transfer:
+//     sender = AccountRepository.get_by_id_for_update(sender_id)
+//     receiver = AccountRepository.get_by_id_for_update(receiver_id)
 
-    if sender.balance < amount:
-        raise InsufficientFundsError("Sender has insufficient balance")
+//     if sender.balance < amount:
+//         raise InsufficientFundsError("Sender has insufficient balance")
 
-    sender.balance -= amount
-    receiver.balance += amount
+//     sender.balance -= amount
+//     receiver.balance += amount
     
-    transfer_record = TransferRepository.create(
-        sender_id=sender_id,
-        receiver_id=receiver_id, 
-        amount=amount,
-        status=TransactionStatus.COMPLETED
-    )
+//     transfer_record = TransferRepository.create(
+//         sender_id=sender_id,
+//         receiver_id=receiver_id, 
+//         amount=amount,
+//         status=TransactionStatus.COMPLETED
+//     )
     
-    return transfer_record`,
-        },
-        {
-          title: "JWT Authentication Middleware",
-          description:
-            "Custom decorator for protecting routes and validating user sessions.",
-          language: "python",
-          code: `def login_required(f):
-    @wraps(f)
-    def decorated(*args, **kwargs):
-        token = None
-        if 'Authorization' in request.headers:
-            token = request.headers['Authorization'].split(" ")[1]
+//     return transfer_record`,
+//         },
+//         {
+//           title: "JWT Authentication Middleware",
+//           description:
+//             "Custom decorator for protecting routes and validating user sessions.",
+//           language: "python",
+//           code: `def login_required(f):
+//     @wraps(f)
+//     def decorated(*args, **kwargs):
+//         token = None
+//         if 'Authorization' in request.headers:
+//             token = request.headers['Authorization'].split(" ")[1]
         
-        if not token:
-            return jsonify({'message': 'Token is missing!'}), 401
+//         if not token:
+//             return jsonify({'message': 'Token is missing!'}), 401
             
-        try:
-            data = jwt.decode(token, current_app.config['SECRET_KEY'], algorithms=["HS256"])
-            current_user = User.query.filter_by(public_id=data['public_id']).first()
-        except:
-             return jsonify({'message': 'Token is invalid!'}), 401
+//         try:
+//             data = jwt.decode(token, current_app.config['SECRET_KEY'], algorithms=["HS256"])
+//             current_user = User.query.filter_by(public_id=data['public_id']).first()
+//         except:
+//              return jsonify({'message': 'Token is invalid!'}), 401
 
-        return f(current_user, *args, **kwargs)
-    return decorated`,
-        },
-      ],
+//         return f(current_user, *args, **kwargs)
+//     return decorated`,
+//         },
+//       ],
       testArtifacts: [
         {
           title: "Test Strategy: Transaction Concurrency",
