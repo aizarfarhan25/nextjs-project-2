@@ -53,7 +53,7 @@ export function WorkExperienceDialog({
   return (
     <Dialog open={open} onOpenChange={onOpenChange}>
       {/* Main Dialog Content - Glassmorphic Command Center Style */}
-      <DialogContent className="max-w-4xl max-h-[90vh] p-0 gap-0 bg-zinc-950/95 border-white/10 shadow-2xl shadow-black/80 overflow-hidden [&>button]:hidden sm:[&>button]:hidden flex flex-col">
+      <DialogContent className="max-w-4xl h-[90vh] p-0 gap-0 bg-zinc-950/95 border-white/10 shadow-2xl shadow-black/80 overflow-hidden [&>button]:hidden sm:[&>button]:hidden flex flex-col">
         {/* Sticky Header */}
         <div className="sticky top-0 z-50 flex flex-col bg-zinc-950/80 backdrop-blur-xl border-b border-white/5">
           <div className="flex items-center justify-between p-6 pb-4">
@@ -119,7 +119,7 @@ export function WorkExperienceDialog({
         </div>
 
         {/* Scrollable Content Area */}
-        <div className="flex-1 overflow-y-auto p-6 md:p-8 bg-gradient-to-b from-zinc-950 to-black relative">
+        <div className="flex-1 min-h-0 overflow-y-auto p-6 md:p-8 bg-gradient-to-b from-zinc-950 to-black relative">
           {/* Decorative Grid Background */}
           <div className="absolute inset-0 bg-[linear-gradient(to_right,#80808012_1px,transparent_1px),linear-gradient(to_bottom,#80808012_1px,transparent_1px)] bg-[size:24px_24px] pointer-events-none"></div>
 

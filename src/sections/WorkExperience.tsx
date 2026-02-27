@@ -115,7 +115,7 @@ export const workExperiences: WorkExperience[] = [
         "As a Software Quality Assurance professional at Astra International, I focused on maintaining high-quality standards for enterprise software systems. This role involved extensive regression testing, automation development, and close collaboration with development teams to ensure product stability.",
       achievements: [
         "Executed comprehensive regression tests across 1000+ scenarios ensuring system stability",
-        "Increased personal testing efficiency by 20% through automation script development",
+        "Developed automation scripts for test data generation, eliminating repetitive manual setup and increasing testing efficiency by 20%",
         "Successfully maintained product stability through effective bug identification and validation",
         "Contributed to seamless system updates without negative impact on existing functionalities",
       ],
