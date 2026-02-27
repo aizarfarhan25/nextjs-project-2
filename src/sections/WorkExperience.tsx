@@ -137,8 +137,8 @@ export const workExperiences: WorkExperience[] = [
   },
   {
     company: "Qoala",
-    position: "Junior Software Development Engineer In Test (SDET 1)",
-    period: "Oct 2024 - Present",
+    position: "Junior SDET 1",
+    period: "Oct 2025 - Present",
     location: "Jakarta, Indonesia",
     description: "Full Time",
     link: "https://qoala.com/",

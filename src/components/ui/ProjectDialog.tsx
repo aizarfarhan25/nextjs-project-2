@@ -157,7 +157,7 @@ export function ProjectDialog({
       </DialogTrigger>
 
       {/* Main Dialog Content - Glassmorphic Command Center Style */}
-      <DialogContent className="max-w-4xl h-[90vh] p-0 gap-0 bg-zinc-950/95 border-white/10 shadow-2xl shadow-black/80 overflow-hidden [&>button]:hidden sm:[&>button]:hidden flex flex-col">
+      <DialogContent className="max-w-4xl h-[65vh] p-0 gap-0 bg-zinc-950/95 border-white/10 shadow-2xl shadow-black/80 overflow-hidden [&>button]:hidden sm:[&>button]:hidden flex flex-col">
         {/* Sticky Header */}
         <div className="sticky top-0 z-50 flex flex-col bg-zinc-950/80 backdrop-blur-xl border-b border-white/5">
           <div className="flex items-center justify-between p-6 pb-4">
