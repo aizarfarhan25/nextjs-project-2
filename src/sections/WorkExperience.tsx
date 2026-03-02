@@ -72,7 +72,7 @@ export const workExperiences: WorkExperience[] = [
   {
     company: "Synapsis.id",
     position: "Quality Assurance Engineer",
-    period: "Feb 2025 - June 2025",
+    period: "Feb 2025 - Jun 2025",
     location: "Jakarta, Indonesia",
     description: "Internship",
     link: "https://synapsis.id",
@@ -106,7 +106,7 @@ export const workExperiences: WorkExperience[] = [
   {
     company: "Astra International",
     position: "Software Quality Assurance",
-    period: "June 2025 - Sept 2025",
+    period: "Jun 2025 - Sep 2025",
     location: "Jakarta, Indonesia",
     description: "Contract",
     link: "https://www.astra.co.id/",
@@ -203,7 +203,7 @@ export const WorkExperienceSection = () => {
             {workExperiences.map((experience, experienceIndex) => (
               <Card
                 key={experience.company}
-                className="px-5 pt-6 pb-4 md:pt-8 md:px-10 md:pb-6 lg:pt-10 lg:px-16 sticky"
+                className="px-5 pt-6 pb-4 md:pt-8 md:px-10 md:pb-6 lg:pt-10 lg:px-16 sticky min-h-[340px] md:min-h-0"
                 style={{
                   top: `calc(64px + ${experienceIndex * 40}px)`,
                 }}
