@@ -15,9 +15,9 @@ export const CardHeader = ({
     <div className={twMerge("flex flex-col p-6 md:py-8 md:px-10", className)}>
       <div className="inline-flex items-center gap-2">
         <StarIcon className="size-9 text-amber-300" />
-        <h3 className="font-beni font-bold text-2xl">{title}</h3>
+        <h3 className="font-sans text-2xl font-bold">{title}</h3>
       </div>
-      <p className="text-sm lg:text-base max-w-sm text-white/60 mt-2">{description}</p>
+      <p className="mt-2 max-w-prose text-sm text-white/60 lg:text-base">{description}</p>
     </div>
   );
 };

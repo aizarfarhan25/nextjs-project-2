@@ -1,29 +1,19 @@
 import { Header } from "@/sections/Header";
 import { HeroSection } from "@/sections/Hero";
-import { ProjectsTabs } from "@/sections/ProjectsTabs";
-import { AboutSection } from "@/sections/About";
-import { ContactSection } from "@/sections/Contact";
-import { TapeSection } from "@/sections/Tape";
-import { TestimonialsSection } from "@/sections/Testimonials";
-import { Footer } from "@/sections/Footer";
-import { AutomationDashboard } from "@/sections/AutomationDashboard";
-import { WorkExperienceSection } from "@/sections/WorkExperience";
+import { ProjectsSection } from "@/sections/ProjectsSection";
+import { ExperienceSection } from "@/sections/ExperienceSection";
+import { AboutSection } from "@/sections/AboutSection";
+import { ContactFooter } from "@/sections/ContactFooter";
 
 export default function Home() {
   return (
-    <>
-      <div className="relative">
-        <Header />
-        <HeroSection />
-        <ProjectsTabs />
-        <AutomationDashboard />
-        <WorkExperienceSection />
-        <TapeSection />
-        {/* <TestimonialsSection /> */}
-        <AboutSection />
-        <ContactSection />
-        <Footer />
-      </div>
-    </>
+    <div className="relative">
+      <Header />
+      <HeroSection />
+      <ProjectsSection />
+      <ExperienceSection />
+      <AboutSection />
+      <ContactFooter />
+    </div>
   );
 }

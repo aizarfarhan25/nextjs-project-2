@@ -1,20 +1,13 @@
 "use client";
-import memojiImage from "@/assets/images/me.jpg";
 import memojiImageFormal from "@/assets/images/me-formal.jpg";
 import Image from "next/image";
-import ArrowDown from "@/assets/icons/arrow-down.svg";
-import grainImage from "@/assets/images/grain.jpg";
-import StartIcon from "@/assets/icons/star.svg";
-import SparkleIcon from "@/assets/icons/sparkle.svg";
-import { HeroOrbit } from "@/components/HeroOrbit";
 import { FlipWords } from "@/components/ui/flip-words";
-import { Spotlight } from "../components/ui/Spotlight";
-import download from "@/assets/images/downloads.png";
 import { GridBackground } from "@/components/ui/background-boxes";
 import { SpotlightNew } from "@/components/ui/spotlight-new";
 import { useEffect, useState } from "react";
-import { HoverBorderGradient } from "@/components/ui/hover-border-gradient";
 import { ScrollReveal } from "@/components/ui/ScrollReveal";
+import { IconDownload } from "@tabler/icons-react";
+import { siteConfig } from "@/data/site";
 
 export const HeroSection = () => {
   const [isMobile, setIsMobile] = useState(false);
@@ -39,48 +32,7 @@ export const HeroSection = () => {
         smallWidth={isMobile ? 80 : 240}
         translateY={isMobile ? -80 : -350}
       />
-      {/* <div className="absolute inset-0 [mask-image:linear-gradient(to_bottom,transparent,black_10%,black_70%,transparent)]"></div>
-        <div
-          className="absolute inset-0 -z-30 opacity-5"
-          style={{
-            backgroundImage: `url(${grainImage.src})`,
-          }}
-        ></div>
-        <div className="size-[620px] hero-ring"></div>
-        <div className="size-[820px] hero-ring"></div>
-        <div className="size-[1020px] hero-ring"></div>
-        <div className="size-[1220px] hero-ring"></div> */}
-      {/* <HeroOrbit size={800} rotation={-72}>
-        <StartIcon className="size-28 text-amber-300" />
-        </HeroOrbit>
-        <HeroOrbit size={550} rotation={20}>
-          <StartIcon className="size-12 text-amber-300" />
-        </HeroOrbit>
-        <HeroOrbit size={590} rotation={98}>
-          <StartIcon className="size-8 text-amber-300" />
-        </HeroOrbit>
-        <HeroOrbit size={430} rotation={-14}>
-          <SparkleIcon className="size-8 text-amber-300/20" />
-        </HeroOrbit>
-        <HeroOrbit size={440} rotation={79}>
-          <SparkleIcon className="size-5 text-amber-300/20" />
-        </HeroOrbit>
-        <HeroOrbit size={530} rotation={178}>
-          <SparkleIcon className="size-10 text-amber-300/20" />
-        </HeroOrbit>
-        <HeroOrbit size={710} rotation={144}>
-          <SparkleIcon className="size-14 text-amber-300/20" />
-        </HeroOrbit> */}
-      {/* </div> */}
       <div className="container">
-        {/* <Spotlight
-          className="-top-40 left-0 md:left-60 md:-top-20"
-          fill="white"
-        /> */}
-        {/* <Spotlight
-          className="-top-40 right-0 md:right-60 md:-top-20"
-          fill="white"
-        /> */}
         <div className="flex flex-col items-center gap-1.5">
           <ScrollReveal>
             <div className="flex flex-col items-center gap-1.5">
@@ -91,8 +43,8 @@ export const HeroSection = () => {
               />
               <div className="relative">
                 <span className="absolute inset-0 bg-black/60 rounded-lg md:hidden"></span>
-                <h1 className="relative font-beni text-white/90 bg-clip-text text-center text-2xl md:text-5xl font-bold drop-shadow-lg flex items-center gap-2 pt-4 pb-4">
-                  Andi Muh. Aizar Farhan
+                <h1 className="relative font-sans text-white/90 bg-clip-text text-center text-2xl md:text-5xl font-extrabold drop-shadow-lg flex items-center gap-2 pt-4 pb-4">
+                  {siteConfig.name}
                 </h1>
               </div>
               <div className="bg-gray-900 border border-green-500 px-4 py-1.5 inline-flex items-center gap-4 rounded-lg z-10">
@@ -100,7 +52,7 @@ export const HeroSection = () => {
                   <div className="bg-green-500 absolute inset-0 animate-ping-large rounded-full"></div>
                 </div>
                 <div className="text-xs md:text-sm lg:text-sm font-medium">
-                  Available for new jobs and projects
+                  {siteConfig.availability}
                 </div>
               </div>
             </div>
@@ -110,81 +62,48 @@ export const HeroSection = () => {
           <ScrollReveal delay={0.2}>
             <div className="relative mt-2">
               <span className="absolute inset-0 bg-black/70 rounded-lg md:hidden"></span>
-              <div className="font-bold text-2xl font-beni md:text-5xl text-wrap text-center tracking-wide h-[80px] md:h-[120px] flex items-center justify-center relative">
+              <div className="font-bold text-2xl font-sans md:text-5xl text-wrap text-center tracking-wide h-[80px] md:h-[120px] flex items-center justify-center relative">
                 <FlipWords
-                  words={["Quality Assurance Engineer", "Front-End Developer"]}
+                  words={siteConfig.roles}
                   duration={2000}
                   className="text-white"
                 />
               </div>
             </div>
-            {/* <p className="mt-4 text-center text-white/60 md:text-lg">
-            Motivated QA engineer with experience designing and executing tests
-            to help improve software quality. Currently serving as a
-            <span className="p-1.5 text-sky-400 font-bold">
-              QA Engineer at Synapsis.id
-            </span>
-            through June 2025
-          </p> */}
             <div className="relative mt-4">
               <span className="absolute inset-0 bg-black/70 rounded-lg md:hidden"></span>
               <p className="relative text-center text-white/60 md:text-lg z-auto">
-                Motivated Quality Assurance Engineer with experience designing and
-                executing tests to help improve software quality.
-                {/* Currently serving as a
-              Software Quality Assurance Engineer at Synapsis.id
-              </span> */}
+                {siteConfig.tagline}
               </p>
             </div>
           </ScrollReveal>
         </div>
         <ScrollReveal delay={0.4}>
-          <div className="flex flex-col md:flex-row justify-center items-center mt-8 gap-4">
-            <div className="flex justify-center text-center">
-              <a href="#project" className="z-10">
-                <HoverBorderGradient
-                  containerClassName="rounded-xl transition-transform duration-200 hover:scale-105"
-                  as="button"
-                  className="dark:bg-black bg-white text-black dark:text-white flex items-center space-x-2"
-                >
-                  <span>Explore My Work</span>
-                  <ArrowDown className="size-4" />
-                </HoverBorderGradient>
-              </a>
-            </div>
-            <a href="#contact" className="z-10">
-              <button className="inline-flex items-center gap-2 border border-white bg-white text-gray-900 px-6 h-12 rounded-xl transition-transform duration-200 hover:scale-105 hover:shadow-lg">
-                <span className="font-semibold">Let&apos;s Connect</span>
+          <div className="flex flex-col items-center justify-center gap-4 md:flex-row mt-10">
+            <a href="#project">
+              <button className="inline-flex h-12 min-w-[180px] items-center justify-center rounded-3xl bg-white px-6 font-semibold text-gray-950 transition-transform duration-200 hover:scale-105">
+                Explore My Work
+              </button>
+            </a>
+            <a href="#contact">
+              <button className="glass-surface inline-flex h-12 min-w-[180px] items-center justify-center gap-2 rounded-3xl px-6 font-semibold text-white transition-transform duration-200 hover:scale-105 hover:border-white/20">
+                Let&apos;s Connect
                 <span>👋🏽</span>
               </button>
             </a>
             <a
-              href="/CV - Andi Muh. Aizar Farhan.pdf"
+              href={siteConfig.resumePath}
               target="_blank"
               rel="noopener noreferrer"
-              className="z-10"
             >
-              <button className="inline-flex items-center gap-2 border border-white/15 bg-amber-400 text-gray-900 px-6 h-12 rounded-xl transition-transform duration-200 hover:scale-105 hover:shadow-lg">
-                <span className="font-semibold">My Resume</span>
-                <Image
-                  src={download}
-                  alt="Download"
-                  className="size-4"
-                  width={16}
-                  height={16}
-                />
+              <button className="inline-flex h-12 min-w-[180px] items-center justify-center gap-2 rounded-3xl border border-accent/50 bg-accent-muted px-6 font-semibold text-accent-hover transition-transform duration-200 hover:scale-105">
+                My Resume
+                <IconDownload className="size-4" stroke={1.75} />
               </button>
             </a>
           </div>
         </ScrollReveal>
       </div>
-      {/* <div className="flex justify-center">
-        <FlipWords
-          words={["test ini adalah test", "asdasda"]}
-          duration={1000}
-        />
-      </div> */}
-      {/* </BoxesCore> */}
     </div>
   );
 };
