@@ -1,22 +1,21 @@
 "use client";
 
 import { useState, useEffect } from "react";
-import { motion, AnimatePresence } from "framer-motion";
-import { Check, Terminal, X } from "lucide-react";
+import { motion } from "framer-motion";
+import { Check, Terminal } from "lucide-react";
+
+const steps = [
+  { text: "Initializing environment...", duration: 800 },
+  { text: "Loading modules: [React, Next.js, Tailwind]", duration: 1200 },
+  { text: "Running checks...", duration: 1000 },
+  { text: "Validating responsive design... [OK]", duration: 800 },
+  { text: "Verifying accessibility... [OK]", duration: 800 },
+  { text: "SDET protocols... [ACTIVE]", duration: 800 },
+];
 
 export const TerminalIntro = ({ onComplete }: { onComplete: () => void }) => {
   const [lines, setLines] = useState<string[]>([]);
   const [isSkipped, setIsSkipped] = useState(false);
-
-  const steps = [
-    { text: "Initializing environment...", duration: 800 },
-    { text: "Loading modules: [React, Next.js, Tailwind]", duration: 1200 },
-    { text: "Running checks...", duration: 1000 },
-    { text: "Validating responsive design... [OK]", duration: 800 },
-    { text: "Verifying accessibility... [OK]", duration: 800 },
-    { text: "SDET protocols... [ACTIVE]", duration: 800 },
-    // { text: "Launching portfolio...", duration: 1000 },
-  ];
 
   useEffect(() => {
     let currentIndex = 0;

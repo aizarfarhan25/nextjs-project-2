@@ -1,8 +1,7 @@
 import type { Metadata } from "next";
-import { Inter, Calistoga, Nunito } from "next/font/google";
-import localFonts from "next/font/local";
+import { Inter, Calistoga } from "next/font/google";
 import "./globals.css";
-import { twMerge } from "tailwind-merge";
+import { ModalProvider } from "@/providers/ModalProvider";
 
 const inter = Inter({ subsets: ["latin"], variable: "--font-sans" });
 const calistoga = Calistoga({
@@ -11,28 +10,10 @@ const calistoga = Calistoga({
   weight: ["400"],
 });
 
-const satoshi = localFonts({
-  src: [
-    {
-      path: "../../public/font/Satoshi-Regular.otf",
-      weight: "500",
-    },
-  ],
-  variable: "--font-satoshi",
-});
-const beni = localFonts({
-  src: [
-    {
-      path: "../../public/font/BeniRegular.woff2",
-      weight: "500",
-    },
-  ],
-  variable: "--font-beni",
-});
-
 export const metadata: Metadata = {
   title: "My Portfolio",
-  description: "Front-End Developer and Quality Assurance",
+  description:
+    "Quality Assurance Engineer and Front-End Developer portfolio of Andi Muh. Aizar Farhan.",
 };
 
 export const viewport = {
@@ -50,10 +31,7 @@ export default function RootLayout({
       <head>
         <meta name="color-scheme" content="dark" />
         <meta name="theme-color" content="#000000" />
-        <meta
-          name="viewport"
-          content="width=device-width, initial-scale=1.0, maximum-scale=1.0"
-        />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
         <meta name="apple-mobile-web-app-capable" content="yes" />
         <meta
           name="apple-mobile-web-app-status-bar-style"
@@ -75,15 +53,10 @@ export default function RootLayout({
         />
       </head>
       <body
-        className={twMerge(
-          // inter.className,
-          // calistoga.className,
-          // satoshi.className,
-          `bg-black text-white antialiased ${inter.variable} ${calistoga.variable} ${satoshi.variable} ${beni.variable}`
-        )}
+        className={`bg-black text-white antialiased ${inter.variable} ${calistoga.variable}`}
         style={{ backgroundColor: "#000000", color: "#ffffff" }}
       >
-        {children}
+        <ModalProvider>{children}</ModalProvider>
       </body>
     </html>
   );

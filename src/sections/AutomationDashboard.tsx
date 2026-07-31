@@ -1,11 +1,16 @@
 "use client";
 
 import { SectionHeader } from "@/components/SectionHeader";
-import { Card } from "@/components/Card";
+import { GlassCard } from "@/components/ui/GlassCard";
 import { PipelineGraph } from "@/components/ui/PipelineGraph";
 import { TestConsole } from "@/components/ui/TestConsole";
-import { motion } from "framer-motion";
 
+/**
+ * Not currently rendered on the live site (see src/app/page.tsx) — the
+ * pipeline/console data below is illustrative, not real CI output, so this
+ * section is kept dormant rather than shown to visitors. Real project data
+ * for the "automation" category lives in @/data/projects/automation.
+ */
 export const AutomationDashboard = () => {
   return (
     <div className="py-16 lg:py-24" id="automation">
@@ -18,11 +23,11 @@ export const AutomationDashboard = () => {
 
         <div className="mt-16 flex flex-col gap-8">
           {/* Top Row: Pipeline Visualization */}
-          <Card className="p-8 md:p-12 relative overflow-hidden group">
+          <GlassCard className="p-8 md:p-12 relative overflow-hidden group">
             <div className="absolute inset-0 bg-gradient-to-r from-emerald-300/5 to-sky-400/5 opacity-0 group-hover:opacity-100 transition-opacity duration-500 pointer-events-none" />
             <div className="flex flex-col gap-6">
               <div className="flex flex-col gap-2">
-                <h3 className="font-beni font-bold text-2xl md:text-3xl text-gray-200">
+                <h3 className="font-serif font-bold text-2xl md:text-3xl text-gray-200">
                   Automated Test Suite
                 </h3>
                 <p className="text-white/60 text-sm md:text-base">
@@ -34,15 +39,15 @@ export const AutomationDashboard = () => {
                 <PipelineGraph />
               </div>
             </div>
-          </Card>
+          </GlassCard>
 
           {/* Bottom Row: Two Columns */}
           <div className="grid grid-cols-1 lg:grid-cols-2 gap-8">
             {/* Live Test Console */}
-            <Card className="p-0 overflow-hidden border-0 bg-transparent shadow-none">
+            <GlassCard className="p-0 overflow-hidden border-0 bg-transparent shadow-none">
               <div className="flex flex-col gap-4">
                 <div className="px-6 pt-6">
-                  <h3 className="font-beni font-bold text-2xl text-gray-200">
+                  <h3 className="font-serif font-bold text-2xl text-gray-200">
                     Live Test Runner
                   </h3>
                   <p className="text-white/60 text-sm mt-2">
@@ -53,11 +58,11 @@ export const AutomationDashboard = () => {
                   <TestConsole />
                 </div>
               </div>
-            </Card>
+            </GlassCard>
 
             {/* Metrics Dashboard */}
             <div className="flex flex-col gap-4">
-              <Card className="flex-1 p-6 md:p-8 flex flex-col justify-center">
+              <GlassCard className="flex-1 p-6 md:p-8 flex flex-col justify-center">
                 <div className="flex items-center gap-4">
                   <div className="w-12 h-12 rounded-full bg-emerald-500/20 flex items-center justify-center">
                     <svg
@@ -81,8 +86,8 @@ export const AutomationDashboard = () => {
                     </div>
                   </div>
                 </div>
-              </Card>
-              <Card className="flex-1 p-6 md:p-8 flex flex-col justify-center">
+              </GlassCard>
+              <GlassCard className="flex-1 p-6 md:p-8 flex flex-col justify-center">
                 <div className="flex items-center gap-4">
                   <div className="w-12 h-12 rounded-full bg-blue-500/20 flex items-center justify-center">
                     <svg
@@ -104,8 +109,8 @@ export const AutomationDashboard = () => {
                     <div className="text-sm text-gray-400">Suite Pass Rate</div>
                   </div>
                 </div>
-              </Card>
-              <Card className="flex-1 p-6 md:p-8 flex flex-col justify-center">
+              </GlassCard>
+              <GlassCard className="flex-1 p-6 md:p-8 flex flex-col justify-center">
                 <div className="flex items-center gap-4">
                   <div className="w-12 h-12 rounded-full bg-purple-500/20 flex items-center justify-center">
                     <svg
@@ -131,7 +136,7 @@ export const AutomationDashboard = () => {
                     </div>
                   </div>
                 </div>
-              </Card>
+              </GlassCard>
             </div>
           </div>
         </div>

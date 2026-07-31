@@ -2,7 +2,7 @@
 
 import { motion, useInView } from "framer-motion";
 import { useRef } from "react";
-import { cn } from "@/lib/utils";
+import { fadeUpTransition, fadeUpVariants } from "@/lib/motion";
 
 interface ScrollRevealProps {
     children: React.ReactNode;
@@ -24,13 +24,11 @@ export const ScrollReveal = ({
     return (
         <div ref={ref} style={{ width, position: "relative" }} className={className}>
             <motion.div
-                variants={{
-                    hidden: { opacity: 0, y: 30 },
-                    visible: { opacity: 1, y: 0 },
-                }}
+                className="h-full"
+                variants={fadeUpVariants}
                 initial="hidden"
                 animate={isInView ? "visible" : "hidden"}
-                transition={{ duration: 0.6, delay: delay, ease: "easeOut" }}
+                transition={{ ...fadeUpTransition, delay }}
             >
                 {children}
             </motion.div>
