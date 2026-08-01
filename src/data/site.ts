@@ -3,8 +3,8 @@ import type { NavItem, ProjectCategory, SocialLink } from "./types";
 export const siteConfig = {
   name: "Andi Muh. Aizar Farhan",
   shortName: "Aizar",
-  roles: ["Quality Assurance Engineer", "Front-End Developer"],
-  roleLine: "Quality Assurance Engineer · Front-End Developer",
+  roles: ["Quality Assurance Engineer", "Front-End Developer", "Prompt Engineer"],
+  roleLine: "Quality Assurance Engineer · Front-End Developer · Prompt Engineer",
   tagline:
     "Motivated Quality Assurance Engineer with experience designing and executing tests to help improve software quality.",
   email: "andiaizarfarhan@gmail.com",

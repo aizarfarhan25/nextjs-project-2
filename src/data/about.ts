@@ -11,6 +11,7 @@ import GithubIcon from "@/assets/icons/github-brands-solid.svg";
 import PythonIcon from "@/assets/icons/python.svg";
 import PostgreSQL from "@/assets/icons/postgresql.svg";
 import MySQL from "@/assets/icons/mysql.svg";
+import Claude from "@/assets/icons/claude.svg";
 import type { Hobby, ToolboxItem } from "./types";
 
 export const bio = {
@@ -36,6 +37,7 @@ export const toolboxItems: ToolboxItem[] = [
   { title: "Python", iconType: PythonIcon },
   { title: "PostgreSQL", iconType: PostgreSQL },
   { title: "MySQL", iconType: MySQL },
+  { title: "Claude Code", iconType: Claude },
 ];
 
 export const hobbies: Hobby[] = [
