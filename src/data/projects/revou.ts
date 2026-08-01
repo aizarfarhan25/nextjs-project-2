@@ -54,7 +54,7 @@ export const revouProjects: ProjectInput[] = [
       { title: "Frontend" },
       { title: "HTML, Tailwind CSS, and JavaScript" },
     ],
-    link: "https://niuhome.site/",
+    link: "https://niuhome.netlify.app/",
     image: niuhome,
     projectDetail: {
       overview:
@@ -95,7 +95,7 @@ export const revouProjects: ProjectInput[] = [
       { title: "Frontend" },
       { title: "HTML, Tailwind CSS, and JavaScript" },
     ],
-    link: "https://comfie.site/",
+    link: "https://comfiebyniuhome.netlify.app/",
     image: comfie,
     projectDetail: {
       overview:
