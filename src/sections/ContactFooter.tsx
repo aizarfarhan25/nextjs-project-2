@@ -57,12 +57,12 @@ export function ContactFooter() {
                   aria-label={link.title}
                   className="group flex flex-col items-center gap-2 text-white/70 transition-colors hover:text-accent-hover"
                   animate={{ y: [0, -6, 0] }}
-                  transition={{
-                    duration: 3,
-                    repeat: Infinity,
-                    delay: index * 0.4,
-                    ease: "easeInOut",
-                  }}
+                  // transition={{
+                  //   duration: 3,
+                  //   repeat: Infinity,
+                  //   delay: index * 0.4,
+                  //   ease: "easeInOut",
+                  // }}
                   whileHover={{ scale: 1.08 }}
                 >
                   <span className="flex size-12 items-center justify-center rounded-full border border-white/10 bg-white/[0.04] shadow-[0_0_20px_rgba(0,0,0,0.2)] transition-all group-hover:border-accent/40 group-hover:bg-accent-muted group-hover:shadow-[0_0_20px_rgba(201,168,76,0.2)]">
