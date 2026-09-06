@@ -3,8 +3,8 @@ import type { NavItem, ProjectCategory, SocialLink } from "./types";
 export const siteConfig = {
   name: "Andi Muh. Aizar Farhan",
   shortName: "Aizar",
-  roles: ["Software Development Engineer in Test", "Prompt Engineer"],
-  roleLine: "Software Development Engineer in Test · Prompt Engineer",
+  roles: ["Software Development Engineer in Test", "Quality Assurance Engineer", "Frontend Developer"],
+  roleLine: "Software Development Engineer in Test · Quality Assurance Engineer · Frontend Developer",
   tagline:
     "Motivated Software Development Engineer in Test with experience designing and executing tests to help improve software quality.",
   email: "andiaizarfarhan@gmail.com",
