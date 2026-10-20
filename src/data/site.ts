@@ -8,7 +8,7 @@ export const siteConfig = {
   tagline:
     "Motivated Software Development Engineer in Test with experience designing and executing tests to help improve software quality.",
   email: "andiaizarfarhan@gmail.com",
-  resumePath: "/CV - Andi Muh. Aizar Farhan.pdf",
+  resumePath: "/CV - Andi Muh. Aizar Farhan - SDET.pdf",
   availability: "Available for new jobs and projects",
   copyrightStartYear: 2024,
   mapUrl: "https://maps.app.goo.gl/L5setnKDWxLaNCAM6",
