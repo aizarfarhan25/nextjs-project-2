@@ -5,6 +5,7 @@ import ReactIcon from "@/assets/icons/react-brands-solid.svg";
 import TailwindIcon from "@/assets/icons/tailwind-brand-solid.svg";
 import PlaywrightIcon from "@/assets/icons/playwright.svg";
 import KatalonIcon from "@/assets/icons/katalon.svg";
+import K6Icon from "@/assets/icons/k6.svg";
 import FigmaIcon from "@/assets/icons/figma.svg";
 import PostmanIcon from "@/assets/icons/postman.svg";
 import GithubIcon from "@/assets/icons/github-brands-solid.svg";
@@ -32,6 +33,7 @@ export const toolboxItems: ToolboxItem[] = [
   { title: "Github", iconType: GithubIcon },
   { title: "Katalon", iconType: KatalonIcon },
   { title: "Playwright", iconType: PlaywrightIcon },
+  { title: "k6", iconType: K6Icon },
   { title: "Postman", iconType: PostmanIcon },
   { title: "Figma", iconType: FigmaIcon },
   { title: "Python", iconType: PythonIcon },
